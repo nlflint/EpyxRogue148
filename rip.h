@@ -6,5 +6,6 @@
 #define ROG11SRC_RIP_H
 
 void score(int amount, int flags, char monst);
+void put_scores(struct sc_ent *top10);
 
 #endif //ROG11SRC_RIP_H

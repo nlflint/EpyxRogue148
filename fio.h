@@ -6,6 +6,7 @@
 #define ROG11SRC_FIO_H
 
 int open(char *filename, int mode);
-read(int fd, int *cd, int count);
+int read(int fd, int *cd, int count);
+int close(int fd);
 
 #endif //ROG11SRC_FIO_H

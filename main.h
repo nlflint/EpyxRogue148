@@ -7,5 +7,8 @@
 
 int roll(int number, int sides);
 void fatal();
+void playit(char *sname);
+void quit(void);
+void leave(void);
 
 #endif //ROG11SRC_MAIN_H

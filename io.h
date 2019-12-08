@@ -7,6 +7,7 @@
 
 void msg();
 char *noterse(char *str);
+void SIG2(void);
 
 #endif //ROG11SRC_IO_H
 

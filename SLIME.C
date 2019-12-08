@@ -6,6 +6,11 @@
 
 #include	"rogue.h"
 #include	"curses.h"
+#include	"init.h"
+#include	"io.h"
+#include	"extern.h"
+
+
 
 /*
  * Slime_split:
@@ -14,8 +19,7 @@
 
 static coord slimy;
 
-slime_split(tp)
-THING *tp;
+void slime_split(THING *tp)
 {
 	register THING *nslime;
 
@@ -91,4 +95,3 @@ coord *cp;
 		}
 	return appear;
 }
-

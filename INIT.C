@@ -6,6 +6,7 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
 
 THING *_things;
 int   *_t_alloc;
@@ -417,12 +418,6 @@ char *end_mem;		/* Pointer to end of memory */
 char *startmem;	    /* Pointer to the start of static memory */
 char *end_sb;		/* Pointer to the end of static base */
 char *ring_buf;		/* Buffer used by ring code */
-
-/*
- *  Declarations for data space that must be saved and restored exaxtly
- */
-byte *_level;
-byte *_flags;
 
 /*
  * init_ds()

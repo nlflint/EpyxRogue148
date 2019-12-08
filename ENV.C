@@ -3,10 +3,12 @@
  *          Jon Lane  -  10/31/83
  */
 
-#include <stdio.h>
 #include "mach_dep.h"
 #include "fio.h"
 #include "main.h"
+#include "env.h"
+#include "strings.h"
+#include <string.h>
 
 #define ERROR   -1
 #define NULL	0
@@ -91,7 +93,7 @@ void setenv(char *envfile)
 			;
 		if (ch == 0) {
 				close(fd);
-				return(NULL);
+				return;
 		}
 		pstate = 3;
 		/*

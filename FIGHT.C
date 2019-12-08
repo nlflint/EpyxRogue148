@@ -7,6 +7,8 @@
 #include "rogue.h"
 #include "curses.h"
 #include "main.h"
+#include "fight.h"
+#include "extern.h"
 
 /*
  * fight:
@@ -586,10 +588,7 @@ register char *mname, *does, *did;
  * remove:
  *	Remove a monster from the screen
  */
-remove(mp, tp, waskill)
-register coord *mp;
-THING *tp;
-bool waskill;
+void remove(coord *mp, THING *tp, bool waskill)
 {
     register THING *obj, *nexti;
 
@@ -621,8 +620,7 @@ bool waskill;
  * is_magic:
  *	Returns true if an object radiates magic
  */
-is_magic(obj)
-register THING *obj;
+int is_magic(THING *obj)
 {
     switch (obj->o_type)
     {
@@ -644,9 +642,7 @@ register THING *obj;
  * killed:
  *	Called to put a monster to death
  */
-killed(tp, pr)
-THING *tp;
-bool pr;
+void killed(THING *tp, bool pr)
 {
     pstats.s_exp += tp->t_stats.s_exp;
     /*
@@ -687,4 +683,3 @@ bool pr;
      */
     check_level();
 }
-

@@ -7,6 +7,9 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include "rip.h"
+#include "swint.h"
 
 static int sc_fd;
 /*
@@ -106,15 +109,14 @@ get_scores(top10)
 }
 
 
-put_scores(top10)
-	struct sc_ent *top10;
+void put_scores(struct sc_ent *top10)
 {
     register int i;
     
     for (i=0;(i<TOPSCORES) && top10->sc_gold;i++,top10++) 
     {
 	if (write(sc_fd,top10,sizeof(struct sc_ent)) <= 0)
-            return;
+	    return;
     }
 }
 
@@ -288,8 +290,8 @@ register char monst;
         center(6, buf);
 	move(LINES-2,0);
 #endif DEMO
-    wclose(0);
-    exit();
+    wclose();
+    exit(1);
 }
 
 /*
@@ -415,7 +417,7 @@ total_winner()
     }
     move(c - 'a' + 1, 0);
     printw("   %5u  Gold Pieces          ", oldpurse);
-    score(purse, 2);
+    score(purse, 2, 0);
 #endif DEMO
     exit(0);
 }

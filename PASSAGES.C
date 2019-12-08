@@ -7,6 +7,8 @@
 #include "rogue.h"
 #include "curses.h"
 #include "misc.h"
+#include "passages.h"
+#include "extern.h"
 
 /*
  * conn:
@@ -364,12 +366,10 @@ add_pass()
 }
 #endif
 
-psplat(y, x)
-shint y, x;
+void psplat(shint y, shint x)
 {
     register int idx;
 
     _level[idx = INDEX(y, x)] = PASSAGE;
     _flags[idx] |= F_PASS;
 }
-

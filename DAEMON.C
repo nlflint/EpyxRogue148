@@ -72,7 +72,7 @@ void daemon(int (*func)(), int arg)
  * do_daemons:
  *	Run all the daemons, passing the argument to the function.
  */
-do_daemons()
+void do_daemons(void)
 {
     register struct delayed_action *dev;
 
@@ -105,9 +105,7 @@ void fuse(int (*func)(), int arg, int time)
  * lengthen:
  *	Increase the time until a fuse goes off
  */
-lengthen(func, xtime)
-int (*func)();
-int xtime;
+void lengthen(int (*func)(), int xtime)
 {
     register struct delayed_action *wire;
 
@@ -134,7 +132,7 @@ int (*func)();
  * do_fuses:
  *	Decrement counters and start needed fuses
  */
-do_fuses()
+void do_fuses(void)
 {
     register struct delayed_action *wire;
 

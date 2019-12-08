@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/nathanflint/git/rog11src/armor.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/armor.c.o"
-  "/Users/nathanflint/git/rog11src/blah.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/blah.c.o"
   "/Users/nathanflint/git/rog11src/chase.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/chase.c.o"
   "/Users/nathanflint/git/rog11src/command.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/command.c.o"
   "/Users/nathanflint/git/rog11src/croot.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/croot.c.o"
@@ -31,6 +30,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/nathanflint/git/rog11src/passages.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/passages.c.o"
   "/Users/nathanflint/git/rog11src/potions.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/potions.c.o"
   "/Users/nathanflint/git/rog11src/protect.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/protect.c.o"
+  "/Users/nathanflint/git/rog11src/random.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/random.c.o"
   "/Users/nathanflint/git/rog11src/rings.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/rings.c.o"
   "/Users/nathanflint/git/rog11src/rip.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/rip.c.o"
   "/Users/nathanflint/git/rog11src/rooms.c" "/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles/rog11src.dir/rooms.c.o"

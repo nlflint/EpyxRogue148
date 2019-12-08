@@ -3,100 +3,103 @@
 
 CMakeFiles/rog11src.dir/armor.c.o
  /Users/nathanflint/git/rog11src/armor.c
- /Users/nathanflint/git/rog11src/armor.h
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/daemon.h
  /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/io.h
+ /Users/nathanflint/git/rog11src/misc.h
+ /Users/nathanflint/git/rog11src/pack.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
-CMakeFiles/rog11src.dir/blah.c.o
- /Users/nathanflint/git/rog11src/blah.c
+ /Users/nathanflint/git/rog11src/thing.h
 CMakeFiles/rog11src.dir/chase.c.o
  /Users/nathanflint/git/rog11src/chase.c
+ /Users/nathanflint/git/rog11src/chase.h
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/command.c.o
+ /Users/nathanflint/git/rog11src/armor.h
  /Users/nathanflint/git/rog11src/command.c
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
+ /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/croot.c.o
  /Users/nathanflint/git/rog11src/croot.c
 CMakeFiles/rog11src.dir/curses.c.o
  /Users/nathanflint/git/rog11src/curses.c
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/daemon.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/daemon.c
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/daemons.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/daemons.c
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/env.c.o
  /Users/nathanflint/git/rog11src/env.c
+ /Users/nathanflint/git/rog11src/env.h
  /Users/nathanflint/git/rog11src/fio.h
  /Users/nathanflint/git/rog11src/mach_dep.h
  /Users/nathanflint/git/rog11src/main.h
+ /Users/nathanflint/git/rog11src/strings.h
 CMakeFiles/rog11src.dir/extern.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.c
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/fakedos.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/fakedos.c
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/fight.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/fight.c
+ /Users/nathanflint/git/rog11src/fight.h
  /Users/nathanflint/git/rog11src/main.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/init.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/init.c
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/io.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/io.c
  /Users/nathanflint/git/rog11src/io.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/list.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/list.c
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/load.c.o
- /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/load.c
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/mach_dep.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/dos.h
  /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/keypad.h
  /Users/nathanflint/git/rog11src/mach_dep.c
+ /Users/nathanflint/git/rog11src/mach_dep.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/main.c.o
@@ -115,6 +118,7 @@ CMakeFiles/rog11src.dir/main.c.o
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/new_leve.h
  /Users/nathanflint/git/rog11src/protect.h
+ /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rip.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/swint.h
@@ -122,95 +126,110 @@ CMakeFiles/rog11src.dir/maze.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/maze.c
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/misc.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/io.h
  /Users/nathanflint/git/rog11src/misc.c
+ /Users/nathanflint/git/rog11src/misc.h
+ /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/monsters.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/monsters.c
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/move.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/io.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/move.c
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/new_leve.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/new_leve.c
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/pack.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/pack.c
+ /Users/nathanflint/git/rog11src/pack.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/passages.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/passages.c
+ /Users/nathanflint/git/rog11src/passages.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/potions.c.o
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/daemon.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/fight.h
+ /Users/nathanflint/git/rog11src/io.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/potions.c
+ /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/protect.c.o
  /Users/nathanflint/git/rog11src/protect.c
  /Users/nathanflint/git/rog11src/swint.h
+CMakeFiles/rog11src.dir/random.c.o
+ /Users/nathanflint/git/rog11src/random.c
+ /Users/nathanflint/git/rog11src/random.h
 CMakeFiles/rog11src.dir/rings.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/io.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rings.c
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/rip.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rip.c
+ /Users/nathanflint/git/rog11src/rip.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/rooms.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/rooms.c
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/save.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/save.c
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/scrolls.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/scrolls.c
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/slime.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/init.h
+ /Users/nathanflint/git/rog11src/io.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/slime.c
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/sticks.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/io.h
+ /Users/nathanflint/git/rog11src/misc.h
+ /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/sticks.c
- /Users/nathanflint/git/rog11src/swint.h
+ /Users/nathanflint/git/rog11src/sticks.h
 CMakeFiles/rog11src.dir/strings.c.o
  /Users/nathanflint/git/rog11src/strings.c
 CMakeFiles/rog11src.dir/test.c.o
@@ -218,18 +237,16 @@ CMakeFiles/rog11src.dir/test.c.o
 CMakeFiles/rog11src.dir/things.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
  /Users/nathanflint/git/rog11src/things.c
 CMakeFiles/rog11src.dir/weapons.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
  /Users/nathanflint/git/rog11src/weapons.c
 CMakeFiles/rog11src.dir/wizard.c.o
  /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
- /Users/nathanflint/git/rog11src/swint.h
  /Users/nathanflint/git/rog11src/wizard.c

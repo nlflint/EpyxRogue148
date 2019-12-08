@@ -6,13 +6,15 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include "io.h"
 
 
 /*
  * ring_on:
  *	Put a ring on a hand
  */
-ring_on()
+void ring_on(void)
 {
     register THING *obj;
     register int ring = -1;
@@ -73,7 +75,7 @@ no_ring:
  * ring_off:
  *	Take off a ring
  */
-ring_off()
+void ring_off(void)
 {
     register int ring;
     register THING *obj;

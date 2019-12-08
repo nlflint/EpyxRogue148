@@ -5,15 +5,20 @@
  * @(#)sticks.c		1.2 (AI Design)		2/12/84
  */
 
+#include "sticks.h"
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include <stdio.h>
+#include <string.h>
+#include "random.h"
+#include "io.h"
 
 /*
  * fix_stick:
  *	Set up a new stick
  */
-fix_stick(cur)
-register THING *cur;
+fix_stick(THING *cur)
 {
     if (strcmp(ws_type[cur->o_which], "staff") == 0)
 	cur->o_damage = "2d3";
@@ -37,7 +42,7 @@ register THING *cur;
  * do_zap:
  *	Perform a zap with a wand
  */
-do_zap()
+void do_zap(void)
 {
     THING *obj;
     THING *tp;
@@ -286,7 +291,7 @@ do_zap()
  * drain:
  *	Do drain hit points from player schtick
  */
-drain()
+void drain(void)
 {
     THING *mp;
     register int cnt;
@@ -452,9 +457,7 @@ char *name;
  * charge_str:
  *	Return an appropriate string for a wand charge
  */
-char *
-charge_str(obj)
-register THING *obj;
+char *charge_str(THING *obj)
 {
     static char buf[20];
 
@@ -464,4 +467,3 @@ register THING *obj;
 	sprintf(buf, " [%d charges]", obj->o_charges);
     return buf;
 }
-

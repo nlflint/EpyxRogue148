@@ -7,6 +7,7 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
 
 /*
  * inv_name:
@@ -162,7 +163,7 @@ chopmsg(s,shmsg,lnmsg,arg1,arg2,arg3)
  * drop:
  *	Put something down
  */
-drop()
+void drop(void)
 {
     register byte ch;
     register THING *nobj, *op;
@@ -212,8 +213,7 @@ drop()
  * can_drop:
  *	Do special checks for dropping or unweilding|unwearing|unringing
  */
-can_drop(op)
-register THING *op;
+int can_drop(THING *op)
 {
     if (op == NULL)
 		return TRUE;
@@ -570,4 +570,3 @@ register byte type;
     sprintf(sp, " about any %ss", tystr);
     return prbuf;
 }
-

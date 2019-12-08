@@ -8,6 +8,9 @@
 #include	"curses.h"
 #include	"keypad.h"
 #include    "dos.h"
+#include    "extern.h"
+#include    "mach_dep.h"
+#include    "swint.h"
 
 #define ULINE() if(is_color) lmagenta();else uline();
 #define TICK_ADDR 0x70
@@ -162,8 +165,8 @@ static struct xlate {
 } xtab[] = {
 	C_HOME, 'y', C_UP,	'k', C_PGUP,'u', C_LEFT,	'h', C_RIGHT,	'l',
 	C_END,	'b', C_DOWN,'j', C_PGDN,'n', C_INS,		'>', C_DEL,		's',
-	C_F1,	'?', C_F2,	'/', C_F3,	'a', C_F4,	CTRL(R), C_F5,		'c',
-	C_F6,	'D', C_F7,	'i', C_F8,	'^', C_F9,	CTRL(F), C_F10,		'!',
+	C_F1,	'?', C_F2,	'/', C_F3,	'a', C_F4,	CTRL('R'), C_F5,		'c',
+	C_F6,	'D', C_F7,	'i', C_F8,	'^', C_F9,	CTRL('F'), C_F10,		'!',
 	ALT_F9,	'F'
 };
 
@@ -250,7 +253,7 @@ isjr()
 	return machine == JR;
 }
 
-int swint(int interruptNumber, sw_regs *rp)
+int swint(int interruptNumber, struct sw_regs *rp)
 {
 	extern int _dsval;
 

@@ -6,6 +6,9 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include "io.h"
+#include "random.h"
 
 /*
  * tr_name:
@@ -248,7 +251,7 @@ register int y, x;
  * eat:
  *	She wants to eat something, so let her try
  */
-eat()
+void eat(void)
 {
     register THING *obj;
 
@@ -294,8 +297,7 @@ eat()
  *	Used to modify the player's strength.  It keeps track of the
  *	highest it has been, just in case
  */
-chg_str(amt)
-register int amt;
+void chg_str(int amt)
 {
     str_t comp;
 
@@ -635,8 +637,7 @@ help(helpscr)
 
 #ifndef UNIX
 
-DISTANCE(y1, x1, y2, x2)
-int y1, x1, y2, x2;
+int DISTANCE(int y1, int x1, int y2, int x2)
 {
 	register int dx, dy;
 
@@ -651,7 +652,7 @@ _ce(a,b)
     return(a->x == b->x && a->y == b->y);
 }
 
-INDEX(y,x)
+int INDEX(int y, int x)
 {
 #ifdef DEBUG
     if (offmap(y,x) && me())
@@ -665,8 +666,7 @@ int offmap(int y, int x)
 	return (y < 1 || y >= maxrow || x < 0 || x >= COLS) ;
 }
 
-winat(y,x)
-    int y, x;
+int winat(int y, int x)
 {
     return(moat(y,x) != NULL ? moat(y,x)->t_disguise : chat(y,x));
 }
@@ -676,7 +676,7 @@ winat(y,x)
  * search:
  *	Player gropes about him to find hidden things.
  */
-search()
+void search(void)
 {
     register int y, x;
     register byte *fp;
@@ -757,7 +757,7 @@ u_level()
  * call:
  *	Allow a user to call a potion, scroll, or ring something
  */
-call()
+void call(void)
 {
     register THING *obj;
     register char **guess, *elsewise;
@@ -820,7 +820,7 @@ do_macro(buf,sz)
     msg("F9 was %s, enter new macro: ",buf);
     if (getinfo(prbuf,sz-1) != ESCAPE)
     	do {
-    		if (*cp != CTRL(F))
+    		if (*cp != CTRL('F'))
     			*buf++ = *cp;
     	} while (*cp++) ;
     msg("");

@@ -122,22 +122,9 @@ CMakeFiles/rog11src.dir/slime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rog11src.dir/slime.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nathanflint/git/rog11src/slime.c -o CMakeFiles/rog11src.dir/slime.c.s
 
-CMakeFiles/rog11src.dir/blah.c.o: CMakeFiles/rog11src.dir/flags.make
-CMakeFiles/rog11src.dir/blah.c.o: ../blah.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rog11src.dir/blah.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/blah.c.o   -c /Users/nathanflint/git/rog11src/blah.c
-
-CMakeFiles/rog11src.dir/blah.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rog11src.dir/blah.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nathanflint/git/rog11src/blah.c > CMakeFiles/rog11src.dir/blah.c.i
-
-CMakeFiles/rog11src.dir/blah.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rog11src.dir/blah.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nathanflint/git/rog11src/blah.c -o CMakeFiles/rog11src.dir/blah.c.s
-
 CMakeFiles/rog11src.dir/extern.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/extern.c.o: ../extern.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/rog11src.dir/extern.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rog11src.dir/extern.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/extern.c.o   -c /Users/nathanflint/git/rog11src/extern.c
 
 CMakeFiles/rog11src.dir/extern.c.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/rog11src.dir/extern.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/mach_dep.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/mach_dep.c.o: ../mach_dep.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/rog11src.dir/mach_dep.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/rog11src.dir/mach_dep.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/mach_dep.c.o   -c /Users/nathanflint/git/rog11src/mach_dep.c
 
 CMakeFiles/rog11src.dir/mach_dep.c.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/rog11src.dir/mach_dep.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/potions.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/potions.c.o: ../potions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/rog11src.dir/potions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/rog11src.dir/potions.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/potions.c.o   -c /Users/nathanflint/git/rog11src/potions.c
 
 CMakeFiles/rog11src.dir/potions.c.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/rog11src.dir/potions.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/sticks.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/sticks.c.o: ../sticks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/rog11src.dir/sticks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/rog11src.dir/sticks.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/sticks.c.o   -c /Users/nathanflint/git/rog11src/sticks.c
 
 CMakeFiles/rog11src.dir/sticks.c.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/rog11src.dir/sticks.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/chase.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/chase.c.o: ../chase.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/rog11src.dir/chase.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/rog11src.dir/chase.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/chase.c.o   -c /Users/nathanflint/git/rog11src/chase.c
 
 CMakeFiles/rog11src.dir/chase.c.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/rog11src.dir/chase.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/main.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/rog11src.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/rog11src.dir/main.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/main.c.o   -c /Users/nathanflint/git/rog11src/main.c
 
 CMakeFiles/rog11src.dir/main.c.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/rog11src.dir/main.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/protect.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/protect.c.o: ../protect.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/rog11src.dir/protect.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/rog11src.dir/protect.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/protect.c.o   -c /Users/nathanflint/git/rog11src/protect.c
 
 CMakeFiles/rog11src.dir/protect.c.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/rog11src.dir/protect.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/strings.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/strings.c.o: ../strings.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/rog11src.dir/strings.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/rog11src.dir/strings.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/strings.c.o   -c /Users/nathanflint/git/rog11src/strings.c
 
 CMakeFiles/rog11src.dir/strings.c.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/rog11src.dir/strings.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/command.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/command.c.o: ../command.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/rog11src.dir/command.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/rog11src.dir/command.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/command.c.o   -c /Users/nathanflint/git/rog11src/command.c
 
 CMakeFiles/rog11src.dir/command.c.i: cmake_force
@@ -254,7 +241,7 @@ CMakeFiles/rog11src.dir/command.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/fakedos.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/fakedos.c.o: ../fakedos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/rog11src.dir/fakedos.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/rog11src.dir/fakedos.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/fakedos.c.o   -c /Users/nathanflint/git/rog11src/fakedos.c
 
 CMakeFiles/rog11src.dir/fakedos.c.i: cmake_force
@@ -267,7 +254,7 @@ CMakeFiles/rog11src.dir/fakedos.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/maze.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/maze.c.o: ../maze.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/rog11src.dir/maze.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/rog11src.dir/maze.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/maze.c.o   -c /Users/nathanflint/git/rog11src/maze.c
 
 CMakeFiles/rog11src.dir/maze.c.i: cmake_force
@@ -280,7 +267,7 @@ CMakeFiles/rog11src.dir/maze.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/rings.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/rings.c.o: ../rings.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/rog11src.dir/rings.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/rog11src.dir/rings.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/rings.c.o   -c /Users/nathanflint/git/rog11src/rings.c
 
 CMakeFiles/rog11src.dir/rings.c.i: cmake_force
@@ -293,7 +280,7 @@ CMakeFiles/rog11src.dir/rings.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/croot.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/croot.c.o: ../croot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/rog11src.dir/croot.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/rog11src.dir/croot.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/croot.c.o   -c /Users/nathanflint/git/rog11src/croot.c
 
 CMakeFiles/rog11src.dir/croot.c.i: cmake_force
@@ -306,7 +293,7 @@ CMakeFiles/rog11src.dir/croot.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/fight.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/fight.c.o: ../fight.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/rog11src.dir/fight.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/rog11src.dir/fight.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/fight.c.o   -c /Users/nathanflint/git/rog11src/fight.c
 
 CMakeFiles/rog11src.dir/fight.c.i: cmake_force
@@ -319,7 +306,7 @@ CMakeFiles/rog11src.dir/fight.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/misc.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/misc.c.o: ../misc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/rog11src.dir/misc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/rog11src.dir/misc.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/misc.c.o   -c /Users/nathanflint/git/rog11src/misc.c
 
 CMakeFiles/rog11src.dir/misc.c.i: cmake_force
@@ -332,7 +319,7 @@ CMakeFiles/rog11src.dir/misc.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/rip.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/rip.c.o: ../rip.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/rog11src.dir/rip.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/rog11src.dir/rip.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/rip.c.o   -c /Users/nathanflint/git/rog11src/rip.c
 
 CMakeFiles/rog11src.dir/rip.c.i: cmake_force
@@ -345,7 +332,7 @@ CMakeFiles/rog11src.dir/rip.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/test.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/test.c.o: ../test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/rog11src.dir/test.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/rog11src.dir/test.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/test.c.o   -c /Users/nathanflint/git/rog11src/test.c
 
 CMakeFiles/rog11src.dir/test.c.i: cmake_force
@@ -358,7 +345,7 @@ CMakeFiles/rog11src.dir/test.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/curses.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/curses.c.o: ../curses.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/rog11src.dir/curses.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/rog11src.dir/curses.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/curses.c.o   -c /Users/nathanflint/git/rog11src/curses.c
 
 CMakeFiles/rog11src.dir/curses.c.i: cmake_force
@@ -371,7 +358,7 @@ CMakeFiles/rog11src.dir/curses.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/init.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/init.c.o: ../init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/rog11src.dir/init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/rog11src.dir/init.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/init.c.o   -c /Users/nathanflint/git/rog11src/init.c
 
 CMakeFiles/rog11src.dir/init.c.i: cmake_force
@@ -384,7 +371,7 @@ CMakeFiles/rog11src.dir/init.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/monsters.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/monsters.c.o: ../monsters.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/rog11src.dir/monsters.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/rog11src.dir/monsters.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/monsters.c.o   -c /Users/nathanflint/git/rog11src/monsters.c
 
 CMakeFiles/rog11src.dir/monsters.c.i: cmake_force
@@ -397,7 +384,7 @@ CMakeFiles/rog11src.dir/monsters.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/things.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/things.c.o: ../things.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/rog11src.dir/things.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/rog11src.dir/things.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/things.c.o   -c /Users/nathanflint/git/rog11src/things.c
 
 CMakeFiles/rog11src.dir/things.c.i: cmake_force
@@ -410,7 +397,7 @@ CMakeFiles/rog11src.dir/things.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/io.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/io.c.o: ../io.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/rog11src.dir/io.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/rog11src.dir/io.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/io.c.o   -c /Users/nathanflint/git/rog11src/io.c
 
 CMakeFiles/rog11src.dir/io.c.i: cmake_force
@@ -423,7 +410,7 @@ CMakeFiles/rog11src.dir/io.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/move.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/move.c.o: ../move.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/rog11src.dir/move.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/rog11src.dir/move.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/move.c.o   -c /Users/nathanflint/git/rog11src/move.c
 
 CMakeFiles/rog11src.dir/move.c.i: cmake_force
@@ -436,7 +423,7 @@ CMakeFiles/rog11src.dir/move.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/rooms.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/rooms.c.o: ../rooms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/rog11src.dir/rooms.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/rog11src.dir/rooms.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/rooms.c.o   -c /Users/nathanflint/git/rog11src/rooms.c
 
 CMakeFiles/rog11src.dir/rooms.c.i: cmake_force
@@ -449,7 +436,7 @@ CMakeFiles/rog11src.dir/rooms.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/weapons.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/weapons.c.o: ../weapons.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/rog11src.dir/weapons.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/rog11src.dir/weapons.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/weapons.c.o   -c /Users/nathanflint/git/rog11src/weapons.c
 
 CMakeFiles/rog11src.dir/weapons.c.i: cmake_force
@@ -462,7 +449,7 @@ CMakeFiles/rog11src.dir/weapons.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/daemon.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/daemon.c.o: ../daemon.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/rog11src.dir/daemon.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/rog11src.dir/daemon.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/daemon.c.o   -c /Users/nathanflint/git/rog11src/daemon.c
 
 CMakeFiles/rog11src.dir/daemon.c.i: cmake_force
@@ -475,7 +462,7 @@ CMakeFiles/rog11src.dir/daemon.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/new_leve.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/new_leve.c.o: ../new_leve.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/rog11src.dir/new_leve.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/rog11src.dir/new_leve.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/new_leve.c.o   -c /Users/nathanflint/git/rog11src/new_leve.c
 
 CMakeFiles/rog11src.dir/new_leve.c.i: cmake_force
@@ -488,7 +475,7 @@ CMakeFiles/rog11src.dir/new_leve.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/save.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/save.c.o: ../save.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/rog11src.dir/save.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/rog11src.dir/save.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/save.c.o   -c /Users/nathanflint/git/rog11src/save.c
 
 CMakeFiles/rog11src.dir/save.c.i: cmake_force
@@ -501,7 +488,7 @@ CMakeFiles/rog11src.dir/save.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/wizard.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/wizard.c.o: ../wizard.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/rog11src.dir/wizard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/rog11src.dir/wizard.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/wizard.c.o   -c /Users/nathanflint/git/rog11src/wizard.c
 
 CMakeFiles/rog11src.dir/wizard.c.i: cmake_force
@@ -514,7 +501,7 @@ CMakeFiles/rog11src.dir/wizard.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/daemons.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/daemons.c.o: ../daemons.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/rog11src.dir/daemons.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/rog11src.dir/daemons.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/daemons.c.o   -c /Users/nathanflint/git/rog11src/daemons.c
 
 CMakeFiles/rog11src.dir/daemons.c.i: cmake_force
@@ -527,7 +514,7 @@ CMakeFiles/rog11src.dir/daemons.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/list.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/list.c.o: ../list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/rog11src.dir/list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/rog11src.dir/list.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/list.c.o   -c /Users/nathanflint/git/rog11src/list.c
 
 CMakeFiles/rog11src.dir/list.c.i: cmake_force
@@ -540,7 +527,7 @@ CMakeFiles/rog11src.dir/list.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/pack.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/pack.c.o: ../pack.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/rog11src.dir/pack.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/rog11src.dir/pack.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/pack.c.o   -c /Users/nathanflint/git/rog11src/pack.c
 
 CMakeFiles/rog11src.dir/pack.c.i: cmake_force
@@ -553,7 +540,7 @@ CMakeFiles/rog11src.dir/pack.c.s: cmake_force
 
 CMakeFiles/rog11src.dir/scrolls.c.o: CMakeFiles/rog11src.dir/flags.make
 CMakeFiles/rog11src.dir/scrolls.c.o: ../scrolls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/rog11src.dir/scrolls.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/rog11src.dir/scrolls.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/scrolls.c.o   -c /Users/nathanflint/git/rog11src/scrolls.c
 
 CMakeFiles/rog11src.dir/scrolls.c.i: cmake_force
@@ -564,6 +551,19 @@ CMakeFiles/rog11src.dir/scrolls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rog11src.dir/scrolls.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nathanflint/git/rog11src/scrolls.c -o CMakeFiles/rog11src.dir/scrolls.c.s
 
+CMakeFiles/rog11src.dir/random.c.o: CMakeFiles/rog11src.dir/flags.make
+CMakeFiles/rog11src.dir/random.c.o: ../random.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/rog11src.dir/random.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rog11src.dir/random.c.o   -c /Users/nathanflint/git/rog11src/random.c
+
+CMakeFiles/rog11src.dir/random.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rog11src.dir/random.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nathanflint/git/rog11src/random.c > CMakeFiles/rog11src.dir/random.c.i
+
+CMakeFiles/rog11src.dir/random.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rog11src.dir/random.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nathanflint/git/rog11src/random.c -o CMakeFiles/rog11src.dir/random.c.s
+
 # Object files for target rog11src
 rog11src_OBJECTS = \
 "CMakeFiles/rog11src.dir/armor.c.o" \
@@ -571,7 +571,6 @@ rog11src_OBJECTS = \
 "CMakeFiles/rog11src.dir/load.c.o" \
 "CMakeFiles/rog11src.dir/passages.c.o" \
 "CMakeFiles/rog11src.dir/slime.c.o" \
-"CMakeFiles/rog11src.dir/blah.c.o" \
 "CMakeFiles/rog11src.dir/extern.c.o" \
 "CMakeFiles/rog11src.dir/mach_dep.c.o" \
 "CMakeFiles/rog11src.dir/potions.c.o" \
@@ -604,7 +603,8 @@ rog11src_OBJECTS = \
 "CMakeFiles/rog11src.dir/daemons.c.o" \
 "CMakeFiles/rog11src.dir/list.c.o" \
 "CMakeFiles/rog11src.dir/pack.c.o" \
-"CMakeFiles/rog11src.dir/scrolls.c.o"
+"CMakeFiles/rog11src.dir/scrolls.c.o" \
+"CMakeFiles/rog11src.dir/random.c.o"
 
 # External object files for target rog11src
 rog11src_EXTERNAL_OBJECTS =
@@ -614,7 +614,6 @@ rog11src: CMakeFiles/rog11src.dir/env.c.o
 rog11src: CMakeFiles/rog11src.dir/load.c.o
 rog11src: CMakeFiles/rog11src.dir/passages.c.o
 rog11src: CMakeFiles/rog11src.dir/slime.c.o
-rog11src: CMakeFiles/rog11src.dir/blah.c.o
 rog11src: CMakeFiles/rog11src.dir/extern.c.o
 rog11src: CMakeFiles/rog11src.dir/mach_dep.c.o
 rog11src: CMakeFiles/rog11src.dir/potions.c.o
@@ -648,6 +647,7 @@ rog11src: CMakeFiles/rog11src.dir/daemons.c.o
 rog11src: CMakeFiles/rog11src.dir/list.c.o
 rog11src: CMakeFiles/rog11src.dir/pack.c.o
 rog11src: CMakeFiles/rog11src.dir/scrolls.c.o
+rog11src: CMakeFiles/rog11src.dir/random.c.o
 rog11src: CMakeFiles/rog11src.dir/build.make
 rog11src: CMakeFiles/rog11src.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking C executable rog11src"

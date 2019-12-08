@@ -6,6 +6,8 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include "chase.h"
 
 #define	DRAGONSHOT  5	/* one chance in DRAGONSHOT that a dragon will flame */
 
@@ -39,8 +41,7 @@ runners()
  * do_chase:
  *	Make one thing chase another.
  */
-do_chase(th)
-THING *th;
+void do_chase(THING *th)
 {
     int	mindist	= 32767, i, dist;
     byte sch;
@@ -426,4 +427,3 @@ register THING *tp;
     }
     return &hero;
 }
-

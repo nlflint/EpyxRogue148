@@ -7,13 +7,30 @@
 #include "rogue.h"
 #include "curses.h"
 #include "io.h"
-#include "armor.h"
+#include "daemon.h"
+#include "thing.h"
+#include "extern.h"
+#include "pack.h"
+
+
+extern bool after;
+/*
+ * waste_time:
+ *	Do nothing but let other things happen
+ */
+void waste_time(void)
+{
+    do_daemons();
+    do_fuses();
+}
+
+
 
 /*
  * wear:
  *	The player wants to wear something, so let him/her put it on.
  */
-int wear()
+void wear()
 {
     register THING *obj;
     register char *sp;
@@ -22,13 +39,13 @@ int wear()
 		msg("you are already wearing some%s.",
 		noterse(".  You'll have to take it off first"));
 		after = FALSE;
-		return 0;
+		return;
     }
     if ((obj = get_item("wear",ARMOR)) == NULL)
-		return 0;
+		return;
     if (obj->o_type != ARMOR) {
 		msg("you can't wear that");
-		return 0;
+		return;
     }
     waste_time();
     obj->o_flags |= ISKNOW ;
@@ -56,12 +73,4 @@ void take_off(void)
     msg("you used to be wearing %c) %s", pack_char(obj), inv_name(obj, TRUE));
 }
 
-/*
- * waste_time:
- *	Do nothing but let other things happen
- */
-waste_time()
-{
-    do_daemons();
-    do_fuses();
-}
+

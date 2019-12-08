@@ -16,6 +16,11 @@
 static char *store;
 static int blksize = 0x4000, lfd;
 
+extern char s_drive[];
+
+void bload(unsigned segment);
+void scr_load(void);
+
 void epyx_yuck(void)
 {
 	extern unsigned int tick;
@@ -43,7 +48,7 @@ void epyx_yuck(void)
 	tick = 0;
 }
 
-scr_load()
+void scr_load(void)
 {
 	int palette, background;
 	int mode, burst;
@@ -79,8 +84,7 @@ scr_load()
 	out(MODEREG,mode);
 }
 
-bload(segment)
-	unsigned segment;
+void bload(unsigned segment)
 {
 	register unsigned offset = 0, rdcnt;
 

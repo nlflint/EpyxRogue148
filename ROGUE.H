@@ -4,7 +4,10 @@
  * rogue.h	1.4 (AI Design) 12/14/84
  */
 
+#ifndef ROG11SRC_ROGUE_H
+#define ROG11SRC_ROGUE_H
 
+#include "misc.h"
 /*
  *  Options set for PC rogue
  */
@@ -56,7 +59,7 @@
 /*
  *  MANX C compiler funnies
  */
-#define	bcopy(a,b)	movmem(&(b),&(a),sizeof(a))
+//#define	bcopy(a,b)	movmem(&(b),&(a),sizeof(a))
 #define stpchr index
 typedef unsigned char byte;
 typedef unsigned char bool;
@@ -84,15 +87,18 @@ typedef unsigned char bool;
 #define until(expr)	while(!(expr))
 #define next(ptr)	(*ptr).l_next
 #define prev(ptr)	(*ptr).l_prev
+
 #ifdef UNIX
-#define winat(y,x)	(moat(y,x) != NULL ? moat(y,x)->t_disguise : chat(y,x))
-#define DISTANCE(y1,x1,y2,x2) (((x2)-(x1))*((x2)-(x1))+((y2)-(y1))*((y2)-(y1)))
+    define winat(y,x)	(moat(y,x) != NULL ? moat(y,x)->t_disguise : chat(y,x))
+    define DISTANCE(y1,x1,y2,x2) (((x2)-(x1))*((x2)-(x1))+((y2)-(y1))*((y2)-(y1)))
 #endif
+
 #ifdef UNIX
-#define ce(a,b)		((a).x == (b).x && (a).y == (b).y)
+    define ce(a,b)		((a).x == (b).x && (a).y == (b).y)
 #else
-#define ce(a,b)		_ce(&(a),&(b))
+    #define ce(a,b)		_ce(&(a),&(b))
 #endif
+
 #define hero		player.t_pos
 #define pstats		player.t_stats
 #define pack		player.t_pack
@@ -103,7 +109,7 @@ typedef unsigned char bool;
 #define free_list(a)	_free_list(&a)
 #define max(a,b)	((a) > (b) ? (a) : (b))
 #define on(thing,flag)	(((thing).t_flags & (flag)) != 0)
-#define CTRL(ch)	('ch' & 037)
+#define CTRL(ch)	(ch & 037)
 #define GOLDCALC	(rnd(50 + 10 * level) + 2)
 #define ISRING(h,r)	(cur_ring[h] != NULL && cur_ring[h]->o_which == r)
 #define ISWEARING(r)	(ISRING(LEFT, r) || ISRING(RIGHT, r))
@@ -373,7 +379,7 @@ struct magic_item {
 
 struct array {
 	char storage[MAXNAME+1];
-} ;
+};
 
 /*
  * Room structure
@@ -406,34 +412,34 @@ struct stats {
  */
 union thing {
     struct {
-	union thing *_l_next, *_l_prev;	/* Next pointer in link */
-	coord _t_pos;			/* Position */
-	char _t_turn;			/* If slowed, is it a turn to move */
-	char _t_type;			/* What it is */
-	byte _t_disguise;		/* What mimic looks like */
-	byte _t_oldch;			/* Character that was where it was */
-	coord *_t_dest;			/* Where it is running to */
-	short _t_flags;			/* State word */
-	struct stats _t_stats;		/* Physical description */
-	struct room *_t_room;		/* Current room for thing */
-	union thing *_t_pack;		/* What the thing is carrying */
+        union thing *_l_next, *_l_prev;	/* Next pointer in link */
+        coord _t_pos;			/* Position */
+        char _t_turn;			/* If slowed, is it a turn to move */
+        char _t_type;			/* What it is */
+        byte _t_disguise;		/* What mimic looks like */
+        byte _t_oldch;			/* Character that was where it was */
+        coord *_t_dest;			/* Where it is running to */
+        short _t_flags;			/* State word */
+        struct stats _t_stats;		/* Physical description */
+        struct room *_t_room;		/* Current room for thing */
+        union thing *_t_pack;		/* What the thing is carrying */
     } _t;
     struct {
-	union thing *_l_next, *_l_prev;	/* Next pointer in link */
-	shint _o_type;			/* What kind of object it is */
-	coord _o_pos;			/* Where it lives on the screen */
-	char *_o_text;			/* What it says if you read it */
-	char _o_launch;			/* What you need to launch it */
-	char *_o_damage;		/* Damage if used like sword */
-	char *_o_hurldmg;		/* Damage if thrown */
-	shint _o_count;			/* Count for plural objects */
-	shint _o_which;			/* Which object of a type it is */
-	shint _o_hplus;			/* Plusses to hit */
-	shint _o_dplus;			/* Plusses to damage */
-	short _o_ac;			/* Armor class */
-	short _o_flags;			/* Information about objects */
-	char _o_enemy;			/* If it is enchanted, who it hates */
-	shint _o_group;			/* Group number for this object */
+        union thing *_l_next, *_l_prev;	/* Next pointer in link */
+        shint _o_type;			/* What kind of object it is */
+        coord _o_pos;			/* Where it lives on the screen */
+        char *_o_text;			/* What it says if you read it */
+        char _o_launch;			/* What you need to launch it */
+        char *_o_damage;		/* Damage if used like sword */
+        char *_o_hurldmg;		/* Damage if thrown */
+        shint _o_count;			/* Count for plural objects */
+        shint _o_which;			/* Which object of a type it is */
+        shint _o_hplus;			/* Plusses to hit */
+        shint _o_dplus;			/* Plusses to damage */
+        short _o_ac;			/* Armor class */
+        short _o_flags;			/* Information about objects */
+        char _o_enemy;			/* If it is enchanted, who it hates */
+        shint _o_group;			/* Group number for this object */
     } _o;
 };
 
@@ -516,5 +522,4 @@ THING	*find_mons(), *find_obj(), *get_item(), *new_item(),
 	*new_thing(), *wake_monster();
 struct room	*roomin();
 
-#include "extern.h"
-#include "swint.h"
+#endif //ROG11SRC_ROGUE_H

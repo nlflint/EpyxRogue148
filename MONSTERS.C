@@ -6,6 +6,7 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
 
 /*
  * List of monsters in rough order of vorpalness
@@ -121,7 +122,7 @@ register THING *tp;
  * wanderer:
  *	Create a new wandering monster and aim it at the player
  */
-wanderer()
+void wanderer(void)
 {
     int i;
     register struct room *rp;
@@ -254,4 +255,3 @@ moat(my,mx)
 			return(tp);
 	return(NULL);
 }
-

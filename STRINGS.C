@@ -4,9 +4,9 @@ extern char ctp_[];
 
 int isalpha(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x03); }
 int isupper(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x01); }
-int islower(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x02); }
+int islower(int x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x02); }
 int isdigit(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x04); }
-int isspace(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x10); }
+int isspace(int x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x10); }
 int isprint(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0xc7); }
 
 toascii(x)
@@ -26,9 +26,7 @@ tolower(chr)
 	return(isupper(chr)?((chr)+('a'-'A')):(chr));
 }
 
-stccpy(s1,s2,count)
-	char *s1, *s2;
-	int count;
+char *stccpy(char *s1, char *s2, int count)
 {
 	while (count-->0 && *s2)
 		*s1++ = *s2++;
@@ -79,8 +77,7 @@ endblk(str)
 /*
  * lcase: convert a string to lower case
  */
-lcase(str)
-	char *str;
+void lcase(char *str)
 {
 	while ( *str = tolower(*str) )
 		str++;

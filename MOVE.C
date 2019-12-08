@@ -6,6 +6,9 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include "io.h"
+#include "misc.h"
 
 /*
  * Used to hold the new hero position
@@ -30,8 +33,7 @@ byte ch;
  *	Check to see that a move is legal.  If it is handle the
  * consequences (fighting, picking up, etc.)
  */
-do_move(dy, dx)
-int dy, dx;
+void do_move(int dy, int dx)
 {
     register byte ch;
     register int fl;

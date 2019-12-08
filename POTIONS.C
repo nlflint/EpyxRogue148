@@ -6,12 +6,17 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "io.h"
+#include "extern.h"
+#include "daemon.h"
+#include "random.h"
+#include "fight.h"
 
 /*
  * quaff:
  *	Quaff a potion from the pack
  */
-quaff()
+void quaff(void)
 {
     register THING *obj, *th;
     register bool discardit = FALSE;

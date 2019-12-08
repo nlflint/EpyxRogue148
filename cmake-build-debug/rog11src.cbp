@@ -44,7 +44,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -65,7 +64,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -89,13 +87,16 @@
 		<Unit filename="/Users/nathanflint/git/rog11src/begin.h">
 			<Option target="rog11src"/>
 		</Unit>
-		<Unit filename="/Users/nathanflint/git/rog11src/blah.c">
-			<Option target="rog11src"/>
-		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/chase.c">
 			<Option target="rog11src"/>
 		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/chase.h">
+			<Option target="rog11src"/>
+		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/command.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/command.h">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/croot.c">
@@ -135,6 +136,9 @@
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/fight.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/fight.h">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/fio.h">
@@ -200,7 +204,13 @@
 		<Unit filename="/Users/nathanflint/git/rog11src/pack.c">
 			<Option target="rog11src"/>
 		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/pack.h">
+			<Option target="rog11src"/>
+		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/passages.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/passages.h">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/potions.c">
@@ -210,6 +220,12 @@
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/protect.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/random.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/random.h">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/rings.c">
@@ -239,6 +255,9 @@
 		<Unit filename="/Users/nathanflint/git/rog11src/sticks.c">
 			<Option target="rog11src"/>
 		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/sticks.h">
+			<Option target="rog11src"/>
+		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/strings.c">
 			<Option target="rog11src"/>
 		</Unit>
@@ -249,6 +268,9 @@
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/test.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/thing.h">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/things.c">

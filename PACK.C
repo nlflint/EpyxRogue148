@@ -1,5 +1,6 @@
 #include "rogue.h"
 #include "curses.h"
+#include "pack.h"
 
 /*
  * Routines to deal with the pack
@@ -372,8 +373,7 @@ int type;
  * pack_char:
  *	Return which character would address a pack object
  */
-pack_char(obj)
-register THING *obj;
+char pack_char(THING *obj)
 {
     register THING *item;
     register byte c;

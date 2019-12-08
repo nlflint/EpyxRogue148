@@ -18,8 +18,6 @@
 #define wmove(a,b,c)	move(b,c)
 
 #define	wclear	clear
-#define fputs(a,b)	addstr(a)
-#define puts(s)	addstr(s)
 
 #define wrefresh	stub
 #define	clearok		stub

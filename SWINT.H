@@ -17,6 +17,8 @@ struct sw_regs {
 	int	es;
 };
 
+int swint(int interruptNumber, struct sw_regs *rp);
+
 //The interrupts
 #define	SW_DOS	0x21
 #define	SW_KEY	0x16

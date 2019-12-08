@@ -150,33 +150,6 @@ armor.c.s:
 	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/armor.c.s
 .PHONY : armor.c.s
 
-blah.o: blah.c.o
-
-.PHONY : blah.o
-
-# target to build an object file
-blah.c.o:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/blah.c.o
-.PHONY : blah.c.o
-
-blah.i: blah.c.i
-
-.PHONY : blah.i
-
-# target to preprocess a source file
-blah.c.i:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/blah.c.i
-.PHONY : blah.c.i
-
-blah.s: blah.c.s
-
-.PHONY : blah.s
-
-# target to generate assembly for a file
-blah.c.s:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/blah.c.s
-.PHONY : blah.c.s
-
 chase.o: chase.c.o
 
 .PHONY : chase.o
@@ -852,6 +825,33 @@ protect.c.s:
 	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/protect.c.s
 .PHONY : protect.c.s
 
+random.o: random.c.o
+
+.PHONY : random.o
+
+# target to build an object file
+random.c.o:
+	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/random.c.o
+.PHONY : random.c.o
+
+random.i: random.c.i
+
+.PHONY : random.i
+
+# target to preprocess a source file
+random.c.i:
+	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/random.c.i
+.PHONY : random.c.i
+
+random.s: random.c.s
+
+.PHONY : random.s
+
+# target to generate assembly for a file
+random.c.s:
+	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/random.c.s
+.PHONY : random.c.s
+
 rings.o: rings.c.o
 
 .PHONY : rings.o
@@ -1188,9 +1188,6 @@ help:
 	@echo "... armor.o"
 	@echo "... armor.i"
 	@echo "... armor.s"
-	@echo "... blah.o"
-	@echo "... blah.i"
-	@echo "... blah.s"
 	@echo "... chase.o"
 	@echo "... chase.i"
 	@echo "... chase.s"
@@ -1266,6 +1263,9 @@ help:
 	@echo "... protect.o"
 	@echo "... protect.i"
 	@echo "... protect.s"
+	@echo "... random.o"
+	@echo "... random.i"
+	@echo "... random.s"
 	@echo "... rings.o"
 	@echo "... rings.i"
 	@echo "... rings.s"

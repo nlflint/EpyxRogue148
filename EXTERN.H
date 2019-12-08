@@ -4,6 +4,11 @@
  * @(#)extern.h	5.1 (Berkeley) 5/11/82
  */
 
+#ifndef ROG11SRC_EXTERN_H
+#define ROG11SRC_EXTERN_H
+
+#include "rogue.h"
+
 /*
  * Don't change the constants, since they are used for sizes in many
  * places in the program.
@@ -69,7 +74,7 @@ extern int	a_chances[], a_class[], count, dnum, food_left,
 		level, max_level, mpos, no_command, no_food, no_move,
 		ntraps, purse, quiet, total;
 
-extern long	seed, *e_levels;
+extern long *e_levels;
 
 extern int hit_mul;
 extern char *your_na, *kild_by;
@@ -88,7 +93,7 @@ char	*brk(), *charge_str(), *ctime(), *getenv(), *inv_name(),
 	 *strcat(), *strcpy(), *tr_name(),
 	*unctrl(), *vowelstr();
 
-int	auto_save(), doctor(), leave(), nohaste(), quit(),
+int	auto_save(), doctor(), nohaste(),
 	rollwand(), runners(), sight(), stomach(), swander(), tstp(),
 	turn_see(), unconfuse(), unsee();
 
@@ -96,3 +101,5 @@ int	auto_save(), doctor(), leave(), nohaste(), quit(),
 #ifdef LOG
 extern int captains_log;
 #endif
+
+#endif //ROG11SRC_EXTERN_H

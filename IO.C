@@ -7,7 +7,7 @@
 #include	"rogue.h"
 #include	"curses.h"
 #include	"extern.h"
-#include "io.h"
+#include    "io.h"
 
 extern char *stccpy(), *stpchr();
 extern int scr_type;
@@ -550,7 +550,7 @@ str_attr(str)
 /*
  * key_state:
  */
-SIG2()
+void SIG2(void)
 {
 	static unsigned icnt = 0, ntick = 0;
 	static int key_init = TRUE;

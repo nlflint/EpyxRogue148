@@ -3,6 +3,9 @@
  */
 #include	"rogue.h"
 #include	"curses.h"
+#include	"swint.h"
+#include	"extern.h"
+
 #include <stdio.h>
 
 char *sbrk();

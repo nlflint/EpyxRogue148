@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rog11src.dir/armor.c.o"
-  "CMakeFiles/rog11src.dir/blah.c.o"
   "CMakeFiles/rog11src.dir/chase.c.o"
   "CMakeFiles/rog11src.dir/command.c.o"
   "CMakeFiles/rog11src.dir/croot.c.o"
@@ -26,6 +25,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/rog11src.dir/passages.c.o"
   "CMakeFiles/rog11src.dir/potions.c.o"
   "CMakeFiles/rog11src.dir/protect.c.o"
+  "CMakeFiles/rog11src.dir/random.c.o"
   "CMakeFiles/rog11src.dir/rings.c.o"
   "CMakeFiles/rog11src.dir/rip.c.o"
   "CMakeFiles/rog11src.dir/rooms.c.o"

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rog11src"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/nathanflint/git/rog11src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/nathanflint/git/rog11src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/nathanflint/git/rog11src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rog11src">
+				<Option output="/Users/nathanflint/git/rog11src/cmake-build-debug/rog11src" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nathanflint/git/rog11src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rog11src"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rog11src/fast">
+				<Option output="/Users/nathanflint/git/rog11src/cmake-build-debug/rog11src" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nathanflint/git/rog11src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rog11src/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nathanflint/git/rog11src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/nathanflint/git/rog11src/armor.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/armor.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/begin.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/blah.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/chase.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/command.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/croot.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/curses.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/curses.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/daemon.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/daemon.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/daemons.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/dos.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/env.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/env.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/extern.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/extern.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/fakedos.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/fight.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/fio.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/init.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/init.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/io.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/io.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/keypad.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/list.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/load.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/load.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/mach_dep.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/mach_dep.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/main.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/main.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/maze.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/misc.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/misc.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/monsters.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/move.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/new_leve.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/new_leve.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/pack.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/passages.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/potions.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/protect.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/protect.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/rings.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/rip.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/rip.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/rogue.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/rooms.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/save.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/scrolls.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/slime.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/sticks.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/strings.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/strings.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/swint.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/test.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/things.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/weapons.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/wizard.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

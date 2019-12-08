@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/nathanflint/git/rog11src/curses.h
+
+/Users/nathanflint/git/rog11src/extern.h
+
+/Users/nathanflint/git/rog11src/passages.c
+rogue.h
+/Users/nathanflint/git/rog11src/rogue.h
+curses.h
+/Users/nathanflint/git/rog11src/curses.h
+
+/Users/nathanflint/git/rog11src/rogue.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
+swint.h
+/Users/nathanflint/git/rog11src/swint.h
+
+/Users/nathanflint/git/rog11src/swint.h
+

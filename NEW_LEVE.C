@@ -13,7 +13,7 @@
 #define MINTREAS 2	/* minimum number of treasures in a treasure room */
 
 
-new_level()
+void new_level(void)
 {
     register int rm, i;
     THING *tp;

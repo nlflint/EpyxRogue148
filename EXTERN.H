@@ -84,15 +84,15 @@ extern int cksum;
 THING *moat();
 
 char	*brk(), *charge_str(), *ctime(), *getenv(), *inv_name(),
-	*killname(), *malloc(), *nothing(), *num(), *ring_num(),
-	*sbrk(), *sprintf(), *strcat(), *strcpy(), *tr_name(),
-	*unctrl(), *vowelstr(), *calloc();
+	*killname(), *nothing(), *num(), *ring_num(),
+	 *strcat(), *strcpy(), *tr_name(),
+	*unctrl(), *vowelstr();
 
-int	auto_save(), doctor(), endit(), leave(), nohaste(), quit(),
+int	auto_save(), doctor(), leave(), nohaste(), quit(),
 	rollwand(), runners(), sight(), stomach(), swander(), tstp(),
 	turn_see(), unconfuse(), unsee();
 
 
 #ifdef LOG
 extern int captains_log;
-#endif LOG
+#endif

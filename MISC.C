@@ -468,8 +468,7 @@ register int nm;
  * spread:
  *	Give a spread around a given number (+/- 10%)
  */
-spread(nm)
-register int nm;
+int spread(int nm)
 {
 	register int r = nm - nm / 10 + rnd(nm / 5);
 	return r;
@@ -661,7 +660,7 @@ INDEX(y,x)
     return((x * (maxrow-1)) + y - 1);
 }
 
-offmap(y,x)
+int offmap(int y, int x)
 {
 	return (y < 1 || y >= maxrow || x < 0 || x >= COLS) ;
 }

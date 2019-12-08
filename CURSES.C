@@ -3,12 +3,13 @@
  */
 #include	"rogue.h"
 #include	"curses.h"
+#include <stdio.h>
 
 char *sbrk();
 /*
  *  Globals for curses
  */
-int LINES=25, COLS=80;
+
 int is_saved = FALSE;
 int iscuron = TRUE;
 int ch_attr = 0x7;
@@ -158,12 +159,12 @@ real_rc(pn, rp,cp)
 /*
  *	clrtoeol
  */
-clrtoeol()
+int clrtoeol()
 {
 	int r,c;
 
 	if (scr_ds == svwin_ds)
-		return;
+		return 0;
 	getrc(&r,&c);
 	blot_out(r,c,r,COLS-1);
 }
@@ -176,9 +177,7 @@ mvaddstr(r,c,s)
 	addstr(s);
 }
 
-mvaddch(r,c,chr)
-	int r, c;
-	char chr;
+int mvaddch(int r, int c, char chr)
 {
 	move(r, c);
 	addch(chr);
@@ -196,8 +195,7 @@ mvinch(r, c)
  * character position
  */
 
-addch(chr)
-	byte chr;
+int addch(byte chr)
 {
 	int r, c;
     register int newc, newr;
@@ -287,18 +285,16 @@ addch(chr)
 	/*
 	 * if you have gone of the screen scroll the whole window
 	 */
-    return(c_row);
+    return c_row;
 }
 
-addstr(s)
-	char *s;
+int addstr(char *s)
 {
 	while(*s)
 		addch(*s++);
 }	
 
-set_attr(bute)
-	int bute;
+int set_attr(int bute)
 {
 	if (bute < MAXATTR)
 		ch_attr = at_table[bute];
@@ -306,10 +302,7 @@ set_attr(bute)
 		ch_attr = bute;
 }	
 
-error(mline,msg,a1,a2,a3,a4,a5)
-	int mline;
-	char *msg;
-	int a1,a2,a3,a4,a5;
+int error(int mline, char *msg, int a1, int a2, int a3, int a4, int a5)
 {
 	int row, col;
 
@@ -340,8 +333,7 @@ set_cursor()
  *						  -- determine type of moniter
  *						  -- determine screen memory location for dma
  */
-winit(drive)
-	char drive;	
+void winit(void)
 {
 	register int i, cnt;
 	extern int _dsval;
@@ -401,13 +393,13 @@ winit(drive)
 	 * Read current cursor position
 	 */
 	real_rc(old_page_no, &c_row, &c_col);
-	if ((savewin = sbrk(4096)) == -1) {
+	if ((savewin = sbrk(4096)) == -1) { //tries to allocate 4k
 		svwin_ds = -1;
 		savewin = (char *) _flags;
 		if (scr_type == 7)
 			fatal(no_mem);
 	} else {
-		savewin = (char *) (((int) savewin + 0xf) & 0xfff0);
+		savewin = (char *) (((int) savewin + 0xf) & 0xfff0); //round savewin up to nearest 16? assumes segment?
 		svwin_ds = (((int) savewin >> 4) & 0xfff) + _dsval;
 	}
 	for (i = 0, cnt = 0; i < 25; cnt += 2*COLS, i++)
@@ -419,9 +411,11 @@ winit(drive)
 	move(c_row, c_col);
 	if (isjr())
 		no_check = TRUE;
+
+	return;
 }
 
-forcebw()
+void forcebw(void)
 {
 	at_table = monoc_attr;
 }
@@ -466,7 +460,7 @@ wrestor()
  * wclose()
  *   close the window file
  */
-wclose()
+void wclose(void)
 {
 
 	/*
@@ -542,13 +536,12 @@ center(row,string)
 /*
  * printw(Ieeeee)
  */
-printw(msg,a1,a2,a3,a4,a5,a6,a7,a8)
-	char *msg;
-	int a1, a2, a3, a4, a5, a6, a7, a8;
+void printw(char *msg, int a1, int a2, int a3, int a4, int a5, int a6, int a7, int a8)
 {
 	char pwbuf[132];
 	sprintf(pwbuf,msg,a1,a2,a3,a4,a5,a6,a7,a8);
 	addstr(pwbuf);
+	return;
 }
 
 scroll_up(start_row,end_row,nlines)
@@ -615,7 +608,7 @@ fixup()
  * Clear the screen in an interesting fashion
  */
 
-implode()
+int implode()
 {
 	int j, delay, r, c, cinc = COLS/10/2, er, ec;
 
@@ -625,7 +618,7 @@ implode()
 	 */
 	if (scr_ds == svwin_ds) {
 		wsetmem(savewin, (er + 1) * COLS, 0x0720);
-		return;
+		return 0;
 	}
 	delay = scr_type == 7 ? 500 : 10;
 	for (r = 0,c = 0,ec = COLS-1; r < 10; r++,c += cinc,er--,ec -= cinc) {
@@ -645,12 +638,12 @@ implode()
  *	Close a door on the screen and redirect output to the temporary buffer
  */
 static int old_ds;
-drop_curtain()
+int drop_curtain(void)
 {
 	register int r, c, j, delay;
 
 	if (svwin_ds == -1)
-		return;
+		return 0;
 	old_ds = scr_ds;
 	dmain(savewin, LINES * COLS, scr_ds, 0);
 	cursor(FALSE);
@@ -669,7 +662,7 @@ drop_curtain()
 	standend();
 }
 
-raise_curtain()
+void raise_curtain(void)
 {
 	register int i, j, o, delay;
 
@@ -684,13 +677,13 @@ raise_curtain()
 	}
 }
 
-switch_page(pn)
+int switch_page(pn)
 {
 	register int pgsize;
 
 	if (scr_type == 7) {
 		page_no = 0;
-		return;
+		return 0;
 	}
 	if (COLS == 40)
 		pgsize = 2048;

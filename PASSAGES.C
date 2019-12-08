@@ -6,13 +6,13 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "misc.h"
 
 /*
  * conn:
  *	Draw a corridor from a room in a certain direction.
  */
-conn(r1, r2)
-int r1, r2;
+void conn(int r1, int r2)
 {
 	struct room *rpf, *rpt;
 	register int rmt, rm;
@@ -103,13 +103,14 @@ int r1, r2;
      * if the rooms are gone.
      */
     if (!(rpf->r_flags & ISGONE))
-	door(rpf, &spos);
+        door(rpf, &spos);
     else
-	psplat(spos.y, spos.x);
+	    psplat(spos.y, spos.x);
+
     if (!(rpt->r_flags & ISGONE))
-	door(rpt, &epos);
+	    door(rpt, &epos);
     else
-	psplat(epos.y, epos.x);
+	    psplat(epos.y, epos.x);
     /*
      * Get ready to move...
      */
@@ -150,10 +151,75 @@ int r1, r2;
 }
 
 /*
+ * passnum:
+ *	Assign a number to each passageway
+ */
+static int pnum;
+static byte newpnum;
+
+
+/*
+ * numpass:
+ *	Number a passageway square and its brethren
+ */
+void numpass(int y, int x)
+{
+    register byte *fp;
+    register struct room *rp;
+    register byte ch;
+
+    if (offmap(y,x))
+        return;
+    fp = &flat(y, x);
+    if (*fp & F_PNUM)
+        return;
+    if (newpnum) {
+        pnum++;
+        newpnum = FALSE;
+    }
+    /*
+     * check to see if it is a door or secret door, i.e., a new exit,
+     * or a numerable type of place
+     */
+    if ((ch = chat(y, x)) == DOOR || (!(*fp & F_REAL) && ch != FLOOR)) {
+        rp = &passages[pnum];
+        rp->r_exit[rp->r_nexits].y = y;
+        rp->r_exit[rp->r_nexits++].x = x;
+    } else if (!(*fp & F_PASS))
+        return;
+    *fp |= pnum;
+    /*
+     * recurse on the surrounding places
+     */
+    numpass(y + 1, x);
+    numpass(y - 1, x);
+    numpass(y, x + 1);
+    numpass(y, x - 1);
+}
+
+void passnum(void)
+{
+    register struct room *rp;
+    register int i;
+
+    pnum = 0;
+    newpnum = FALSE;
+    for (rp = passages; rp < &passages[MAXPASS]; rp++)
+        rp->r_nexits = 0;
+    for (rp = rooms; rp < &rooms[MAXROOMS]; rp++)
+        for (i = 0; i < rp->r_nexits; i++)
+        {
+            newpnum++;
+            numpass(rp->r_exit[i].y, rp->r_exit[i].x);
+        }
+    return;
+}
+
+/*
  * do_passages:
  *	Draw all the passages on a level.
  */
-do_passages()
+void do_passages(void)
 {
     register int i, j;
     int roomcount;
@@ -233,26 +299,26 @@ do_passages()
      */
     for (roomcount = rnd(5); roomcount > 0; roomcount--)
     {
-	r1 = &rdes[rnd(MAXROOMS)];	/* a random room to look from */
-	/*
-	 * find an adjacent room not already connected
-	 */
-	j = 0;
-	for (i = 0; i < MAXROOMS; i++)
-	    if (r1->conn[i] && !r1->isconn[i] && rnd(++j) == 0)
-		r2 = &rdes[i];
-	/*
-	 * if there is one, connect it and look for the next added
-	 * passage
-	 */
-	if (j != 0)
-	{
-	    i = r1 - rdes;
-	    j = r2 - rdes;
-	    conn(i, j);
-	    r1->isconn[j] = TRUE;
-	    r2->isconn[i] = TRUE;
-	}
+	    r1 = &rdes[rnd(MAXROOMS)];	/* a random room to look from */
+        /*
+         * find an adjacent room not already connected
+         */
+        j = 0;
+        for (i = 0; i < MAXROOMS; i++)
+            if (r1->conn[i] && !r1->isconn[i] && rnd(++j) == 0)
+                r2 = &rdes[i];
+        /*
+         * if there is one, connect it and look for the next added
+         * passage
+         */
+        if (j != 0)
+        {
+            i = r1 - rdes;
+            j = r2 - rdes;
+            conn(i, j);
+            r1->isconn[j] = TRUE;
+            r2->isconn[i] = TRUE;
+        }
     }
     passnum();
 }
@@ -297,69 +363,6 @@ add_pass()
 		mvaddch(y, x, ch);
 }
 #endif
-
-/*
- * passnum:
- *	Assign a number to each passageway
- */
-static int pnum;
-static byte newpnum;
-
-passnum()
-{
-    register struct room *rp;
-    register int i;
-
-    pnum = 0;
-    newpnum = FALSE;
-    for (rp = passages; rp < &passages[MAXPASS]; rp++)
-	rp->r_nexits = 0;
-    for (rp = rooms; rp < &rooms[MAXROOMS]; rp++)
-	for (i = 0; i < rp->r_nexits; i++)
-	{
-	    newpnum++;
-	    numpass(rp->r_exit[i].y, rp->r_exit[i].x);
-	}
-}
-/*
- * numpass:
- *	Number a passageway square and its brethren
- */
-numpass(y, x)
-int y, x;
-{
-    register byte *fp;
-    register struct room *rp;
-    register byte ch;
-
-	if (offmap(y,x))
-		return;
-	fp = &flat(y, x);
-	if (*fp & F_PNUM)
-		return;
-	if (newpnum) {
-		pnum++;
-		newpnum = FALSE;
-    }
-    /*
-     * check to see if it is a door or secret door, i.e., a new exit,
-     * or a numerable type of place
-     */
-	if ((ch = chat(y, x)) == DOOR || (!(*fp & F_REAL) && ch != FLOOR)) {
-		rp = &passages[pnum];
-		rp->r_exit[rp->r_nexits].y = y;
-		rp->r_exit[rp->r_nexits++].x = x;
-    } else if (!(*fp & F_PASS))
-		return;
-	*fp |= pnum;
-	/*
-	 * recurse on the surrounding places
-	 */
-	numpass(y + 1, x);
-	numpass(y - 1, x);
-	numpass(y, x + 1);
-	numpass(y, x - 1);
-}
 
 psplat(y, x)
 shint y, x;

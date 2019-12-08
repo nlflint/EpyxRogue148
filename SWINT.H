@@ -1,7 +1,11 @@
 /*
  * Structure and defines for the swint call
+ * Nate's note: Software interrupts. The struct is for setting registers
+ * via C, and something else sets the registers from the struct and calls
+ * triggers the INT
  */
 
+//The registers
 struct sw_regs {
 	int	ax;
 	int	bx;
@@ -13,6 +17,7 @@ struct sw_regs {
 	int	es;
 };
 
+//The interrupts
 #define	SW_DOS	0x21
 #define	SW_KEY	0x16
 #define	SW_SCR	0x10

@@ -16,7 +16,7 @@ char *newmem();
  * init_player:
  *	Roll up the rogue
  */
-init_player()
+void init_player(void)
 {
     register THING *obj;
     bcopy(pstats,max_stats);
@@ -232,7 +232,7 @@ static char *metal[] = {
  * init_things
  *	Initialize the probabilities for types of things
  */
-init_things()
+void init_things(void)
 {
     register struct magic_item *mp;
 
@@ -244,7 +244,7 @@ init_things()
  * init_colors:
  *	Initialize the potion color scheme for this time
  */
-init_colors()
+void init_colors(void)
 {
     register int i, j;
     bool used[NCOLORS];
@@ -270,7 +270,7 @@ init_colors()
  *	Generate the names of the various scrolls
  */
 
-init_names()
+void init_names(void)
 {
      int nsyl;
      register char *cp, *sp;
@@ -338,7 +338,7 @@ rchr(string)
  * init_stones:
  *	Initialize the ring stone setting scheme for this time
  */
-init_stones()
+void init_stones(void)
 {
     register int i, j;
     bool used[NSTONES];
@@ -363,7 +363,7 @@ init_stones()
  * init_materials:
  *	Initialize the construction materials for wands and staffs
  */
-init_materials()
+void init_materials(void)
 {
     register int i, j;
     register char *str;
@@ -428,8 +428,7 @@ byte *_flags;
  * init_ds()
  *   Allocate things data space
  */
-init_ds(clrflag)
-	int clrflag;
+void init_ds(void)
 {
 	register long *ep;
 
@@ -447,4 +446,3 @@ init_ds(clrflag)
     	*ep = *(ep-1) << 1;
     *ep = 0L; 
 }
-

@@ -71,3 +71,14 @@ extern int scr_ds, old_page_no, no_check;
 #define BX_SIZE	7
 
 extern byte dbl_box[BX_SIZE], sng_box[BX_SIZE], fat_box[BX_SIZE];
+int addstr(char *s);
+int addch(byte chr);
+
+int LINES=25, COLS=80;
+
+void winit(void);
+void wclose(void);
+void printw();
+void forcebw(void);
+int drop_curtain(void);
+void raise_curtain(void);

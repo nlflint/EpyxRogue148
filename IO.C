@@ -7,6 +7,7 @@
 #include	"rogue.h"
 #include	"curses.h"
 #include	"extern.h"
+#include "io.h"
 
 extern char *stccpy(), *stpchr();
 extern int scr_type;
@@ -19,14 +20,13 @@ char *stpbrk();
  * msg:
  *	Display a message at the top of the screen.
  */
+
 extern char *msgbuf;
 static int newpos = 0;
 
 /* VARARGS1 */
 
-ifterse(tfmt,fmt,a1,a2,a3,a4,a5)
-char *tfmt,*fmt;
-int a1,a2,a3,a4,a5;
+void ifterse(char *tfmt, char *fmt, int a1, int a2, int a3, int a4, int a5)
 {
 	if (expert)
 	    msg(tfmt,a1,a2,a3,a4,a5);
@@ -34,9 +34,7 @@ int a1,a2,a3,a4,a5;
 	    msg(fmt,a1,a2,a3,a4,a5);
 }
 
-msg(fmt, a1, a2, a3, a4, a5)
-char *fmt;
-int a1,a2,a3,a4,a5;
+void msg(char *fmt, int a1, int a2, int a3, int a4, int a5)
 {
     /*
      * if the string is "", just clear the line
@@ -838,8 +836,7 @@ pf_per(ip)
 	return 0;
 }
 
-noterse(str)
-	char *str;
+char *noterse(char *str)
 {
 	return( terse || expert ? nullstr : str);
 }

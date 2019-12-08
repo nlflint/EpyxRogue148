@@ -11,7 +11,7 @@
  * doctor:
  *	A healing daemon that restores hit points after rest
  */
-doctor()
+int doctor(void)
 {
     register int lv, ohp;
 

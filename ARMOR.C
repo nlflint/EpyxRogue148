@@ -6,12 +6,14 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "io.h"
+#include "armor.h"
 
 /*
  * wear:
  *	The player wants to wear something, so let him/her put it on.
  */
-wear()
+int wear()
 {
     register THING *obj;
     register char *sp;
@@ -20,13 +22,13 @@ wear()
 		msg("you are already wearing some%s.",
 		noterse(".  You'll have to take it off first"));
 		after = FALSE;
-		return;
+		return 0;
     }
     if ((obj = get_item("wear",ARMOR)) == NULL)
-		return;
+		return 0;
     if (obj->o_type != ARMOR) {
 		msg("you can't wear that");
-		return;
+		return 0;
     }
     waste_time();
     obj->o_flags |= ISKNOW ;
@@ -39,7 +41,7 @@ wear()
  * take_off:
  *	Get the armor off of the player's back
  */
-take_off()
+void take_off(void)
 {
     register THING *obj;
 

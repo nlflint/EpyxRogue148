@@ -21,9 +21,7 @@ extern int scr_type;
 /* VARARGS2 */
 
 
-score(amount, flags, monst)
-int amount, flags;
-char monst;
+void score(int amount, int flags, char monst)
 {
 #ifndef DEMO
 #ifndef WIZARD
@@ -89,6 +87,7 @@ char monst;
     pr_scores(rank,&top_ten);
 #endif WIZARD
 #endif DEMO
+    return;
 }
 
 #ifndef DEMO

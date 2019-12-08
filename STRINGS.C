@@ -2,12 +2,12 @@
 
 extern char ctp_[];
 
-isalpha(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x03); }
-isupper(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x01); }
-islower(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x02); }
-isdigit(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x04); }
-isspace(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x10); }
-isprint(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0xc7); }
+int isalpha(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x03); }
+int isupper(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x01); }
+int islower(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x02); }
+int isdigit(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x04); }
+int isspace(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0x10); }
+int isprint(x) {	return  x > 128 ? 0 : (ctp_[(x)+1]&0xc7); }
 
 toascii(x)
 {

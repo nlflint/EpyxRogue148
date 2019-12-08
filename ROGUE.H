@@ -18,7 +18,7 @@
 #define P_DAMAGE 6
 #else
 #define P_DAMAGE 1
-#endif PROTECTED
+#endif
 
 /*
  * if DEBUG or WIZARD is changed
@@ -518,4 +518,3 @@ struct room	*roomin();
 
 #include "extern.h"
 #include "swint.h"
-

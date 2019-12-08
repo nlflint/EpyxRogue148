@@ -14,8 +14,23 @@
  * Copyright (C) 1983 by Mel Sibony, Jon Lane (AI Design update for the IBMPC)
  */
 
+#include <string.h>
 #include "rogue.h"
 #include "curses.h"
+#include "dos.h"
+#include "mach_dep.h"
+#include "load.h"
+#include "init.h"
+#include "env.h"
+#include "protect.h"
+#include "rip.h"
+#include "begin.h"
+#include "new_leve.h"
+#include "daemon.h"
+#include "misc.h"
+#include "io.h"
+#include "main.h"
+
 
 #define is_key(s) ((*s=='-')||(*s=='/'))
 #define is_char(c1,c2) ((c1==c2)||((c1+'a'-'A')==c2))
@@ -36,11 +51,9 @@ struct sw_regs *regs;
  *	The main program, of course
  */
 
-main(argc, argv)
-int argc;
-char **argv;
+void main(int argc, char **argv)
 {
-    register char *curarg, *savfile=0;
+    char *curarg, *savfile=0;
 	struct sw_regs _treg;
 	long junk = 0L;
 	int sl;
@@ -138,7 +151,7 @@ char **argv;
  * endit:
  *	Exit the program abnormally.
  */
-endit()
+void endit(void)
 {
     fatal("Ok, if you want to exit that badly, I'll have to allow it\n");
 }
@@ -150,8 +163,7 @@ endit()
  * in "Software Manual for the Elementary Functions"
  * by W.J. Cody, Jr and William Waite.
  */
-long
-ran()
+long ran()
 {
 	seed *= 125;
 	seed -= (seed/2796203) * 2796203;
@@ -162,8 +174,7 @@ ran()
  * rnd:
  *	Pick a very random number.
  */
-rnd(range)
-register int range;
+int rnd(int range)
 {
     return range < 1 ? 0 : ((ran() + ran())&0x7fffffffl) % range;
 }
@@ -172,8 +183,7 @@ register int range;
  * roll:
  *	Roll a number of dice
  */
-roll(number, sides)
-register int number, sides;
+int roll(int number, int sides)
 {
     register int dtotal = 0;
 
@@ -187,9 +197,7 @@ register int number, sides;
  *	The main loop of the program.  Loop until the game is over,
  *	refreshing things and looking at the proper times.
  */
-playit(sname,bw)
-	char *sname;
-    int bw;
+void playit(char *sname)
 {
     if (sname) {
 		extern int iscuron;
@@ -214,13 +222,15 @@ playit(sname,bw)
     while (playing)
 		command();			/* Command execution */
     endit();
+
+    return;
 }
 
 /*
  * quit:
  *	Have player make certain, then exit.
  */
-quit()
+void quit(void)
 {
     int oy, ox;
     register byte answer;
@@ -268,7 +278,7 @@ quit()
  * leave:
  *	Leave quickly, but courteously
  */
-leave()
+void leave(void)
 {
 	look(FALSE);
     move(LINES - 1, 0);
@@ -282,12 +292,11 @@ leave()
 /*
  *  fatal: exit with a message
  */
-fatal(msg,arg) 
-	char *msg;
-	int arg;
+void fatal(char *msg, char* arg)
 {
 	endwin();
 	printw(msg, arg);
 	exit(0);
+
+	return;
 }
-

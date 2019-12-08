@@ -3,6 +3,10 @@
  *          Jon Lane  -  10/31/83
  */
 
+#include <stdio.h>
+#include "mach_dep.h"
+#include "fio.h"
+#include "main.h"
 
 #define ERROR   -1
 #define NULL	0
@@ -60,15 +64,14 @@ static char *plabel, *pstring;
  *                  to expand the environment
  *
  */
-setenv(envfile)
-    char *envfile;
+void setenv(char *envfile)
 {
 	register char pc;
 
 	one_tick();	/* if he tries to disable the clock */
     if ((fd = open(envfile,0)) < 0)
 	{
-        return(ERROR);
+        return;
 	}
 
 	while ( FOREVER )
@@ -150,9 +153,9 @@ setenv(envfile)
  *  way I can avoid checking for premature eof
  *  every time a character is read.
  */
-peekc()
+int peekc(void)
 {
-	ch = 0;
+	int ch = 0;
 	/*
 	 * we make sure that the strings never get filled past 
 	 * the end, this way we only have to check for these

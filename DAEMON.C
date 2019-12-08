@@ -57,8 +57,8 @@ int (*func)();
  * daemon:
  *	Start a daemon, takes a function.
  */
-daemon(func, arg)
-int (*func)(), arg;
+void daemon(int (*func)(), int arg)
+
 {
     register struct delayed_action *dev;
 
@@ -91,8 +91,7 @@ do_daemons()
  * fuse:
  *	Start a fuse to go off in a certain number of turns
  */
-fuse(func, arg, time)
-int (*func)(), arg, time;
+void fuse(int (*func)(), int arg, int time)
 {
     register struct delayed_action *wire;
 

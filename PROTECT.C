@@ -45,7 +45,7 @@ static struct sw_regs sig2_read = {
 	UNDEFINED
 } ;
 
-protect(drive)
+void protect(int drive)
 {
 	int i, flags;
 	struct sw_regs rgs;
@@ -98,4 +98,3 @@ protect(drive)
 	}
 	no_step = 0;
 }
-

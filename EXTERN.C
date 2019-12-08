@@ -241,7 +241,7 @@ char *helpobjs[MAXHELPO] = {
     "A-Z: 26 different monsters",
     0
 };
-#endif HELP
+#endif //HELP
 /*
  * Names of the various experience levels
  */

@@ -7,6 +7,7 @@
 #include	"rogue.h"
 #include	"curses.h"
 #include	"keypad.h"
+#include    "dos.h"
 
 #define ULINE() if(is_color) lmagenta();else uline();
 #define TICK_ADDR 0x70
@@ -18,7 +19,7 @@ static int ocb;
  * setup:
  *	Get starting setup for all games
  */
-setup()
+void setup(void)
 {
 	terse = FALSE;
 	maxrow = 23;
@@ -34,9 +35,9 @@ setup()
 	ocb = set_ctrlb(0);
 }
 
-clock_on()
+void clock_on(void)
 {
-	extern int _csval, clock(), (*cls_)(), no_clock();
+	extern int _csval, clock(), (*cls_)();
 	int new_vec[2];
 
 	new_vec[0] = clock;
@@ -46,15 +47,16 @@ clock_on()
 	cls_ = no_clock;
 }
 
-no_clock()
+void no_clock(void)
 {
 	dmaout(clk_vec, 2, 0, TICK_ADDR);
+	return;
 }
 
 /*
  * returns a seed for a random number generator
  */
-srand()
+int srand(void)
 {
 #ifdef DEBUG
 	return ++dnum;
@@ -82,7 +84,7 @@ flush_type()
 	typeahead = "";
 }
 
-credits()
+void credits(void)
 {
 	int i;
 	char tname[25];
@@ -248,14 +250,12 @@ isjr()
 	return machine == JR;
 }
 
-swint(intno, rp)
-int intno;
-struct sw_regs *rp;
+int swint(int interruptNumber, sw_regs *rp)
 {
 	extern int _dsval;
 
 	rp->ds = rp->es = _dsval;
-	sysint(intno, rp, rp);
+	sysint(interruptNumber, rp, rp);
 	return rp->ax;
 }
 
@@ -280,7 +280,7 @@ unsetup()
 	set_ctrlb(ocb);
 }
 
-one_tick()
+void one_tick(void)
 {
 	extern int tick;
 	int otick = tick;

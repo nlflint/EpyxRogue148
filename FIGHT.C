@@ -6,6 +6,7 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "main.h"
 
 /*
  * fight:

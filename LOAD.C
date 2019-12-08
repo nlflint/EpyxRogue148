@@ -16,7 +16,7 @@
 static char *store;
 static int blksize = 0x4000, lfd;
 
-epyx_yuck()
+void epyx_yuck(void)
 {
 	extern unsigned int tick;
 	register int type = get_mode();
@@ -93,7 +93,7 @@ bload(segment)
 	}
 }
 
-find_drive()
+int find_drive(void)
 {
 	int drive = bdos(0x19);
 	char spec = s_drive[0]; 

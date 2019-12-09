@@ -143,7 +143,7 @@ struct magic_item ws_magic[MAXSTICKS] = {
 };
 
 #ifdef HELP
-#define MAXHELPC 65
+#define MAXHELPC 64
 char *helpcoms[MAXHELPC] = {
     "F1     list of commands",
     "F2     list of symbols",
@@ -207,7 +207,6 @@ char *helpcoms[MAXHELPC] = {
     "c      rename something",
     "i      inventory",
     "v      version number",
-    "!      Supervisor Key (fake DOS)",
     "D      list what has been discovered",
     0
 };
@@ -343,7 +342,6 @@ int quiet = 0;				/* Number of quiet turns */
 int food_left;				/* Amount of food in hero's stomach */
 int group = 2;				/* Current group number */
 int hungry_state = 0;			/* How hungry is he */
-int cksum = CSUM;
 
 int hit_mul = P_DAMAGE;
 int goodchk = 1;

@@ -6,6 +6,8 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include "daemons.h"
 
 /*
  * doctor:
@@ -121,7 +123,7 @@ nohaste()
  * stomach:
  *	Digest the hero's food
  */
-stomach()
+void stomach(void)
 {
     register int oldfood, deltafood;
 

@@ -29,6 +29,7 @@ CMakeFiles/rog11src.dir/command.c.o
 CMakeFiles/rog11src.dir/croot.c.o
  /Users/nathanflint/git/rog11src/croot.c
 CMakeFiles/rog11src.dir/curses.c.o
+ /Users/nathanflint/git/rog11src/begin.h
  /Users/nathanflint/git/rog11src/curses.c
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.h
@@ -43,8 +44,12 @@ CMakeFiles/rog11src.dir/daemon.c.o
 CMakeFiles/rog11src.dir/daemons.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/daemons.c
+ /Users/nathanflint/git/rog11src/daemons.h
+ /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
+CMakeFiles/rog11src.dir/dos.c.o
+ /Users/nathanflint/git/rog11src/dos.c
 CMakeFiles/rog11src.dir/env.c.o
  /Users/nathanflint/git/rog11src/env.c
  /Users/nathanflint/git/rog11src/env.h
@@ -55,11 +60,6 @@ CMakeFiles/rog11src.dir/env.c.o
 CMakeFiles/rog11src.dir/extern.c.o
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/extern.c
- /Users/nathanflint/git/rog11src/misc.h
- /Users/nathanflint/git/rog11src/rogue.h
-CMakeFiles/rog11src.dir/fakedos.c.o
- /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/fakedos.c
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
 CMakeFiles/rog11src.dir/fight.c.o
@@ -83,8 +83,10 @@ CMakeFiles/rog11src.dir/io.c.o
  /Users/nathanflint/git/rog11src/io.h
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
+ /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/list.c.o
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/list.c
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
@@ -93,6 +95,7 @@ CMakeFiles/rog11src.dir/load.c.o
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
 CMakeFiles/rog11src.dir/mach_dep.c.o
+ /Users/nathanflint/git/rog11src/begin.h
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/dos.h
  /Users/nathanflint/git/rog11src/extern.h
@@ -106,6 +109,7 @@ CMakeFiles/rog11src.dir/main.c.o
  /Users/nathanflint/git/rog11src/begin.h
  /Users/nathanflint/git/rog11src/curses.h
  /Users/nathanflint/git/rog11src/daemon.h
+ /Users/nathanflint/git/rog11src/daemons.h
  /Users/nathanflint/git/rog11src/dos.h
  /Users/nathanflint/git/rog11src/env.h
  /Users/nathanflint/git/rog11src/extern.h
@@ -117,7 +121,6 @@ CMakeFiles/rog11src.dir/main.c.o
  /Users/nathanflint/git/rog11src/main.h
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/new_leve.h
- /Users/nathanflint/git/rog11src/protect.h
  /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rip.h
  /Users/nathanflint/git/rog11src/rogue.h
@@ -148,14 +151,19 @@ CMakeFiles/rog11src.dir/move.c.o
  /Users/nathanflint/git/rog11src/io.h
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/move.c
+ /Users/nathanflint/git/rog11src/move.h
  /Users/nathanflint/git/rog11src/rogue.h
 CMakeFiles/rog11src.dir/new_leve.c.o
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/dos.h
+ /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/new_leve.c
+ /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rogue.h
 CMakeFiles/rog11src.dir/pack.c.o
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/pack.c
  /Users/nathanflint/git/rog11src/pack.h
@@ -177,9 +185,6 @@ CMakeFiles/rog11src.dir/potions.c.o
  /Users/nathanflint/git/rog11src/potions.c
  /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rogue.h
-CMakeFiles/rog11src.dir/protect.c.o
- /Users/nathanflint/git/rog11src/protect.c
- /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/random.c.o
  /Users/nathanflint/git/rog11src/random.c
  /Users/nathanflint/git/rog11src/random.h
@@ -200,17 +205,19 @@ CMakeFiles/rog11src.dir/rip.c.o
  /Users/nathanflint/git/rog11src/swint.h
 CMakeFiles/rog11src.dir/rooms.c.o
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/extern.h
  /Users/nathanflint/git/rog11src/misc.h
+ /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/rooms.c
 CMakeFiles/rog11src.dir/save.c.o
- /Users/nathanflint/git/rog11src/curses.h
- /Users/nathanflint/git/rog11src/misc.h
- /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/save.c
 CMakeFiles/rog11src.dir/scrolls.c.o
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/io.h
  /Users/nathanflint/git/rog11src/misc.h
+ /Users/nathanflint/git/rog11src/random.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/scrolls.c
 CMakeFiles/rog11src.dir/slime.c.o
@@ -242,11 +249,17 @@ CMakeFiles/rog11src.dir/things.c.o
  /Users/nathanflint/git/rog11src/things.c
 CMakeFiles/rog11src.dir/weapons.c.o
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/io.h
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
+ /Users/nathanflint/git/rog11src/thing.h
  /Users/nathanflint/git/rog11src/weapons.c
+ /Users/nathanflint/git/rog11src/weapons.h
 CMakeFiles/rog11src.dir/wizard.c.o
  /Users/nathanflint/git/rog11src/curses.h
+ /Users/nathanflint/git/rog11src/extern.h
+ /Users/nathanflint/git/rog11src/io.h
  /Users/nathanflint/git/rog11src/misc.h
  /Users/nathanflint/git/rog11src/rogue.h
  /Users/nathanflint/git/rog11src/wizard.c

@@ -118,8 +118,7 @@ void lengthen(int (*func)(), int xtime)
  * extinguish:
  *	Put out a fuse
  */
-extinguish(func)
-int (*func)();
+void extinguish(int (*func)())
 {
     register struct delayed_action *wire;
 

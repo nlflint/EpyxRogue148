@@ -8,12 +8,14 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "io.h"
+#include "extern.h"
 
 /*
  * whatis:
  *	What a certin object is
  */
-whatis()
+void whatis(void)
 {
     register THING *obj;
 
@@ -266,5 +268,3 @@ get_num(place)
 	return(*place);
 }
 #endif
-	
-

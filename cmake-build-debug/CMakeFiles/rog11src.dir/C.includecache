@@ -52,8 +52,6 @@ extern.h
 random.h
 /Users/nathanflint/git/rog11src/random.h
 
-/Users/nathanflint/git/rog11src/croot.c
-
 /Users/nathanflint/git/rog11src/curses.c
 rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
@@ -63,6 +61,8 @@ swint.h
 /Users/nathanflint/git/rog11src/swint.h
 extern.h
 /Users/nathanflint/git/rog11src/extern.h
+begin.h
+/Users/nathanflint/git/rog11src/begin.h
 stdio.h
 -
 
@@ -81,22 +81,14 @@ rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
 curses.h
 /Users/nathanflint/git/rog11src/curses.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
+daemons.h
+/Users/nathanflint/git/rog11src/daemons.h
+
+/Users/nathanflint/git/rog11src/daemons.h
 
 /Users/nathanflint/git/rog11src/dos.h
-
-/Users/nathanflint/git/rog11src/env.c
-mach_dep.h
-/Users/nathanflint/git/rog11src/mach_dep.h
-fio.h
-/Users/nathanflint/git/rog11src/fio.h
-main.h
-/Users/nathanflint/git/rog11src/main.h
-env.h
-/Users/nathanflint/git/rog11src/env.h
-strings.h
-/Users/nathanflint/git/rog11src/strings.h
-string.h
--
 
 /Users/nathanflint/git/rog11src/env.h
 
@@ -109,12 +101,6 @@ curses.h
 /Users/nathanflint/git/rog11src/extern.h
 rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
-
-/Users/nathanflint/git/rog11src/fakedos.c
-rogue.h
-/Users/nathanflint/git/rog11src/rogue.h
-curses.h
-/Users/nathanflint/git/rog11src/curses.h
 
 /Users/nathanflint/git/rog11src/fight.c
 rogue.h
@@ -129,8 +115,6 @@ extern.h
 /Users/nathanflint/git/rog11src/extern.h
 
 /Users/nathanflint/git/rog11src/fight.h
-
-/Users/nathanflint/git/rog11src/fio.h
 
 /Users/nathanflint/git/rog11src/init.c
 rogue.h
@@ -151,6 +135,8 @@ extern.h
 /Users/nathanflint/git/rog11src/extern.h
 io.h
 /Users/nathanflint/git/rog11src/io.h
+swint.h
+/Users/nathanflint/git/rog11src/swint.h
 
 /Users/nathanflint/git/rog11src/io.h
 
@@ -161,6 +147,8 @@ rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
 curses.h
 /Users/nathanflint/git/rog11src/curses.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
 
 /Users/nathanflint/git/rog11src/load.c
 rogue.h
@@ -183,6 +171,8 @@ mach_dep.h
 /Users/nathanflint/git/rog11src/mach_dep.h
 swint.h
 /Users/nathanflint/git/rog11src/swint.h
+begin.h
+/Users/nathanflint/git/rog11src/begin.h
 
 /Users/nathanflint/git/rog11src/mach_dep.h
 
@@ -201,8 +191,6 @@ init.h
 /Users/nathanflint/git/rog11src/init.h
 env.h
 /Users/nathanflint/git/rog11src/env.h
-protect.h
-/Users/nathanflint/git/rog11src/protect.h
 rip.h
 /Users/nathanflint/git/rog11src/rip.h
 begin.h
@@ -223,6 +211,8 @@ extern.h
 /Users/nathanflint/git/rog11src/extern.h
 random.h
 /Users/nathanflint/git/rog11src/random.h
+daemons.h
+/Users/nathanflint/git/rog11src/daemons.h
 
 /Users/nathanflint/git/rog11src/main.h
 
@@ -267,12 +257,24 @@ io.h
 /Users/nathanflint/git/rog11src/io.h
 misc.h
 /Users/nathanflint/git/rog11src/misc.h
+move.h
+/Users/nathanflint/git/rog11src/move.h
+
+/Users/nathanflint/git/rog11src/move.h
+rogue.h
+/Users/nathanflint/git/rog11src/rogue.h
 
 /Users/nathanflint/git/rog11src/new_leve.c
 rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
 curses.h
 /Users/nathanflint/git/rog11src/curses.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
+random.h
+/Users/nathanflint/git/rog11src/random.h
+dos.h
+/Users/nathanflint/git/rog11src/dos.h
 
 /Users/nathanflint/git/rog11src/new_leve.h
 
@@ -283,6 +285,8 @@ curses.h
 /Users/nathanflint/git/rog11src/curses.h
 pack.h
 /Users/nathanflint/git/rog11src/pack.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
 
 /Users/nathanflint/git/rog11src/pack.h
 
@@ -317,16 +321,6 @@ random.h
 /Users/nathanflint/git/rog11src/random.h
 fight.h
 /Users/nathanflint/git/rog11src/fight.h
-
-/Users/nathanflint/git/rog11src/protect.c
-swint.h
-/Users/nathanflint/git/rog11src/swint.h
-
-/Users/nathanflint/git/rog11src/protect.h
-
-/Users/nathanflint/git/rog11src/random.c
-random.h
-/Users/nathanflint/git/rog11src/random.h
 
 /Users/nathanflint/git/rog11src/random.h
 
@@ -363,18 +357,22 @@ rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
 curses.h
 /Users/nathanflint/git/rog11src/curses.h
-
-/Users/nathanflint/git/rog11src/save.c
-rogue.h
-/Users/nathanflint/git/rog11src/rogue.h
-curses.h
-/Users/nathanflint/git/rog11src/curses.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
+random.h
+/Users/nathanflint/git/rog11src/random.h
 
 /Users/nathanflint/git/rog11src/scrolls.c
 rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
 curses.h
 /Users/nathanflint/git/rog11src/curses.h
+io.h
+/Users/nathanflint/git/rog11src/io.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
+random.h
+/Users/nathanflint/git/rog11src/random.h
 
 /Users/nathanflint/git/rog11src/slime.c
 rogue.h
@@ -408,13 +406,7 @@ io.h
 
 /Users/nathanflint/git/rog11src/sticks.h
 
-/Users/nathanflint/git/rog11src/strings.c
-
-/Users/nathanflint/git/rog11src/strings.h
-
 /Users/nathanflint/git/rog11src/swint.h
-
-/Users/nathanflint/git/rog11src/test.c
 
 /Users/nathanflint/git/rog11src/thing.h
 
@@ -431,10 +423,26 @@ rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
 curses.h
 /Users/nathanflint/git/rog11src/curses.h
+thing.h
+/Users/nathanflint/git/rog11src/thing.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
+weapons.h
+/Users/nathanflint/git/rog11src/weapons.h
+io.h
+/Users/nathanflint/git/rog11src/io.h
+
+/Users/nathanflint/git/rog11src/weapons.h
+rogue.h
+/Users/nathanflint/git/rog11src/rogue.h
 
 /Users/nathanflint/git/rog11src/wizard.c
 rogue.h
 /Users/nathanflint/git/rog11src/rogue.h
 curses.h
 /Users/nathanflint/git/rog11src/curses.h
+io.h
+/Users/nathanflint/git/rog11src/io.h
+extern.h
+/Users/nathanflint/git/rog11src/extern.h
 

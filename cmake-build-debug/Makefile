@@ -312,6 +312,33 @@ daemons.c.s:
 	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/daemons.c.s
 .PHONY : daemons.c.s
 
+dos.o: dos.c.o
+
+.PHONY : dos.o
+
+# target to build an object file
+dos.c.o:
+	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/dos.c.o
+.PHONY : dos.c.o
+
+dos.i: dos.c.i
+
+.PHONY : dos.i
+
+# target to preprocess a source file
+dos.c.i:
+	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/dos.c.i
+.PHONY : dos.c.i
+
+dos.s: dos.c.s
+
+.PHONY : dos.s
+
+# target to generate assembly for a file
+dos.c.s:
+	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/dos.c.s
+.PHONY : dos.c.s
+
 env.o: env.c.o
 
 .PHONY : env.o
@@ -365,33 +392,6 @@ extern.s: extern.c.s
 extern.c.s:
 	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/extern.c.s
 .PHONY : extern.c.s
-
-fakedos.o: fakedos.c.o
-
-.PHONY : fakedos.o
-
-# target to build an object file
-fakedos.c.o:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/fakedos.c.o
-.PHONY : fakedos.c.o
-
-fakedos.i: fakedos.c.i
-
-.PHONY : fakedos.i
-
-# target to preprocess a source file
-fakedos.c.i:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/fakedos.c.i
-.PHONY : fakedos.c.i
-
-fakedos.s: fakedos.c.s
-
-.PHONY : fakedos.s
-
-# target to generate assembly for a file
-fakedos.c.s:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/fakedos.c.s
-.PHONY : fakedos.c.s
 
 fight.o: fight.c.o
 
@@ -798,33 +798,6 @@ potions.c.s:
 	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/potions.c.s
 .PHONY : potions.c.s
 
-protect.o: protect.c.o
-
-.PHONY : protect.o
-
-# target to build an object file
-protect.c.o:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/protect.c.o
-.PHONY : protect.c.o
-
-protect.i: protect.c.i
-
-.PHONY : protect.i
-
-# target to preprocess a source file
-protect.c.i:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/protect.c.i
-.PHONY : protect.c.i
-
-protect.s: protect.c.s
-
-.PHONY : protect.s
-
-# target to generate assembly for a file
-protect.c.s:
-	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/protect.c.s
-.PHONY : protect.c.s
-
 random.o: random.c.o
 
 .PHONY : random.o
@@ -1206,15 +1179,15 @@ help:
 	@echo "... daemons.o"
 	@echo "... daemons.i"
 	@echo "... daemons.s"
+	@echo "... dos.o"
+	@echo "... dos.i"
+	@echo "... dos.s"
 	@echo "... env.o"
 	@echo "... env.i"
 	@echo "... env.s"
 	@echo "... extern.o"
 	@echo "... extern.i"
 	@echo "... extern.s"
-	@echo "... fakedos.o"
-	@echo "... fakedos.i"
-	@echo "... fakedos.s"
 	@echo "... fight.o"
 	@echo "... fight.i"
 	@echo "... fight.s"
@@ -1260,9 +1233,6 @@ help:
 	@echo "... potions.o"
 	@echo "... potions.i"
 	@echo "... potions.s"
-	@echo "... protect.o"
-	@echo "... protect.i"
-	@echo "... protect.s"
 	@echo "... random.o"
 	@echo "... random.i"
 	@echo "... random.s"

@@ -97,21 +97,3 @@ void bload(unsigned segment)
 	}
 }
 
-int find_drive(void)
-{
-	int drive = bdos(0x19);
-	char spec = s_drive[0]; 
-	char filename[30];
-
-	if (isalpha(spec))
-	{
-		if (isupper(spec))
-			drive = spec - 'A';
-		else
-			drive = spec - 'a';
-	}
-	strcpy(filename,"a:jatgnas.8ys");
-	filename[0] += (char)drive;
-	access(filename);
-	return drive;
-}

@@ -6,6 +6,9 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "io.h"
+#include "extern.h"
+#include "random.h"
 
 char *laugh = "you hear maniacal laughter%s.";
 char *in_dist = " in the distance";
@@ -13,7 +16,7 @@ char *in_dist = " in the distance";
  * read_scroll:
  *	Read a scroll from the pack and do the appropriate thing
  */
-read_scroll()
+void read_scroll(void)
 {
     register THING *obj;
     register int y, x;
@@ -277,4 +280,3 @@ read_scroll()
     if (discardit)
 	discard(obj);
 }
-

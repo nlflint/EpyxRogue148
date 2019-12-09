@@ -94,7 +94,7 @@ char	*brk(), *charge_str(), *ctime(), *getenv(), *inv_name(),
 	*unctrl(), *vowelstr();
 
 int	auto_save(), doctor(), nohaste(),
-	rollwand(), runners(), sight(), stomach(), swander(), tstp(),
+	rollwand(), runners(), sight(), swander(), tstp(),
 	turn_see(), unconfuse(), unsee();
 
 

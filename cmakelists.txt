@@ -5,11 +5,11 @@ set(CMAKE_C_STANDARD 90)
 
 add_executable(rog11src armor.c		env.c		load.c		passages.c	slime.c
         extern.c	mach_dep.c	potions.c	sticks.c
-        chase.c		extern.h	main.c		protect.c	strings.c
-        command.c	fakedos.c	maze.c		rings.c		swint.h
+        chase.c		extern.h	main.c strings.c
+        command.c maze.c		rings.c		swint.h
         croot.c		fight.c		misc.c		rip.c		test.c
         curses.c	init.c		monsters.c	rogue.h		things.c
         curses.h	io.c		move.c		rooms.c		weapons.c
         daemon.c	keypad.h	new_leve.c	save.c		wizard.c
         daemons.c	list.c		pack.c		scrolls.c
-        dos.h mach_dep.h load.h init.h env.h protect.h rip.h begin.h new_leve.h daemon.h misc.h main.h armor.h strings.h fio.h thing.h pack.h passages.h random.c random.h fight.h chase.h sticks.h command.h)
+        dos.h mach_dep.h load.h init.h env.h rip.h begin.h new_leve.h daemon.h misc.h main.h armor.h strings.h fio.h thing.h pack.h passages.h random.c random.h fight.h chase.h sticks.h command.h move.h weapons.h daemons.h save.h dos.c)

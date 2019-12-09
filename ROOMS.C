@@ -6,6 +6,8 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include "random.h"
 
 #define GOLDGRP 1
 
@@ -212,8 +214,7 @@ register coord *cp;
  * enter_room:
  *	Code that is executed whenver you appear in a room
  */
-enter_room(cp)
-register coord *cp;
+void enter_room(coord *cp)
 {
     register struct room *rp;
     register int y, x;

@@ -28,6 +28,7 @@ CMakeFiles/rog11src.dir/command.c.o: ../rogue.h
 
 CMakeFiles/rog11src.dir/croot.c.o: ../croot.c
 
+CMakeFiles/rog11src.dir/curses.c.o: ../begin.h
 CMakeFiles/rog11src.dir/curses.c.o: ../curses.c
 CMakeFiles/rog11src.dir/curses.c.o: ../curses.h
 CMakeFiles/rog11src.dir/curses.c.o: ../extern.h
@@ -42,8 +43,12 @@ CMakeFiles/rog11src.dir/daemon.c.o: ../rogue.h
 
 CMakeFiles/rog11src.dir/daemons.c.o: ../curses.h
 CMakeFiles/rog11src.dir/daemons.c.o: ../daemons.c
+CMakeFiles/rog11src.dir/daemons.c.o: ../daemons.h
+CMakeFiles/rog11src.dir/daemons.c.o: ../extern.h
 CMakeFiles/rog11src.dir/daemons.c.o: ../misc.h
 CMakeFiles/rog11src.dir/daemons.c.o: ../rogue.h
+
+CMakeFiles/rog11src.dir/dos.c.o: ../dos.c
 
 CMakeFiles/rog11src.dir/env.c.o: ../env.c
 CMakeFiles/rog11src.dir/env.c.o: ../env.h
@@ -56,11 +61,6 @@ CMakeFiles/rog11src.dir/extern.c.o: ../curses.h
 CMakeFiles/rog11src.dir/extern.c.o: ../extern.c
 CMakeFiles/rog11src.dir/extern.c.o: ../misc.h
 CMakeFiles/rog11src.dir/extern.c.o: ../rogue.h
-
-CMakeFiles/rog11src.dir/fakedos.c.o: ../curses.h
-CMakeFiles/rog11src.dir/fakedos.c.o: ../fakedos.c
-CMakeFiles/rog11src.dir/fakedos.c.o: ../misc.h
-CMakeFiles/rog11src.dir/fakedos.c.o: ../rogue.h
 
 CMakeFiles/rog11src.dir/fight.c.o: ../curses.h
 CMakeFiles/rog11src.dir/fight.c.o: ../extern.h
@@ -82,8 +82,10 @@ CMakeFiles/rog11src.dir/io.c.o: ../io.c
 CMakeFiles/rog11src.dir/io.c.o: ../io.h
 CMakeFiles/rog11src.dir/io.c.o: ../misc.h
 CMakeFiles/rog11src.dir/io.c.o: ../rogue.h
+CMakeFiles/rog11src.dir/io.c.o: ../swint.h
 
 CMakeFiles/rog11src.dir/list.c.o: ../curses.h
+CMakeFiles/rog11src.dir/list.c.o: ../extern.h
 CMakeFiles/rog11src.dir/list.c.o: ../list.c
 CMakeFiles/rog11src.dir/list.c.o: ../misc.h
 CMakeFiles/rog11src.dir/list.c.o: ../rogue.h
@@ -92,6 +94,7 @@ CMakeFiles/rog11src.dir/load.c.o: ../load.c
 CMakeFiles/rog11src.dir/load.c.o: ../misc.h
 CMakeFiles/rog11src.dir/load.c.o: ../rogue.h
 
+CMakeFiles/rog11src.dir/mach_dep.c.o: ../begin.h
 CMakeFiles/rog11src.dir/mach_dep.c.o: ../curses.h
 CMakeFiles/rog11src.dir/mach_dep.c.o: ../dos.h
 CMakeFiles/rog11src.dir/mach_dep.c.o: ../extern.h
@@ -105,6 +108,7 @@ CMakeFiles/rog11src.dir/mach_dep.c.o: ../swint.h
 CMakeFiles/rog11src.dir/main.c.o: ../begin.h
 CMakeFiles/rog11src.dir/main.c.o: ../curses.h
 CMakeFiles/rog11src.dir/main.c.o: ../daemon.h
+CMakeFiles/rog11src.dir/main.c.o: ../daemons.h
 CMakeFiles/rog11src.dir/main.c.o: ../dos.h
 CMakeFiles/rog11src.dir/main.c.o: ../env.h
 CMakeFiles/rog11src.dir/main.c.o: ../extern.h
@@ -116,7 +120,6 @@ CMakeFiles/rog11src.dir/main.c.o: ../main.c
 CMakeFiles/rog11src.dir/main.c.o: ../main.h
 CMakeFiles/rog11src.dir/main.c.o: ../misc.h
 CMakeFiles/rog11src.dir/main.c.o: ../new_leve.h
-CMakeFiles/rog11src.dir/main.c.o: ../protect.h
 CMakeFiles/rog11src.dir/main.c.o: ../random.h
 CMakeFiles/rog11src.dir/main.c.o: ../rip.h
 CMakeFiles/rog11src.dir/main.c.o: ../rogue.h
@@ -147,14 +150,19 @@ CMakeFiles/rog11src.dir/move.c.o: ../extern.h
 CMakeFiles/rog11src.dir/move.c.o: ../io.h
 CMakeFiles/rog11src.dir/move.c.o: ../misc.h
 CMakeFiles/rog11src.dir/move.c.o: ../move.c
+CMakeFiles/rog11src.dir/move.c.o: ../move.h
 CMakeFiles/rog11src.dir/move.c.o: ../rogue.h
 
 CMakeFiles/rog11src.dir/new_leve.c.o: ../curses.h
+CMakeFiles/rog11src.dir/new_leve.c.o: ../dos.h
+CMakeFiles/rog11src.dir/new_leve.c.o: ../extern.h
 CMakeFiles/rog11src.dir/new_leve.c.o: ../misc.h
 CMakeFiles/rog11src.dir/new_leve.c.o: ../new_leve.c
+CMakeFiles/rog11src.dir/new_leve.c.o: ../random.h
 CMakeFiles/rog11src.dir/new_leve.c.o: ../rogue.h
 
 CMakeFiles/rog11src.dir/pack.c.o: ../curses.h
+CMakeFiles/rog11src.dir/pack.c.o: ../extern.h
 CMakeFiles/rog11src.dir/pack.c.o: ../misc.h
 CMakeFiles/rog11src.dir/pack.c.o: ../pack.c
 CMakeFiles/rog11src.dir/pack.c.o: ../pack.h
@@ -177,9 +185,6 @@ CMakeFiles/rog11src.dir/potions.c.o: ../potions.c
 CMakeFiles/rog11src.dir/potions.c.o: ../random.h
 CMakeFiles/rog11src.dir/potions.c.o: ../rogue.h
 
-CMakeFiles/rog11src.dir/protect.c.o: ../protect.c
-CMakeFiles/rog11src.dir/protect.c.o: ../swint.h
-
 CMakeFiles/rog11src.dir/random.c.o: ../random.c
 CMakeFiles/rog11src.dir/random.c.o: ../random.h
 
@@ -199,17 +204,19 @@ CMakeFiles/rog11src.dir/rip.c.o: ../rogue.h
 CMakeFiles/rog11src.dir/rip.c.o: ../swint.h
 
 CMakeFiles/rog11src.dir/rooms.c.o: ../curses.h
+CMakeFiles/rog11src.dir/rooms.c.o: ../extern.h
 CMakeFiles/rog11src.dir/rooms.c.o: ../misc.h
+CMakeFiles/rog11src.dir/rooms.c.o: ../random.h
 CMakeFiles/rog11src.dir/rooms.c.o: ../rogue.h
 CMakeFiles/rog11src.dir/rooms.c.o: ../rooms.c
 
-CMakeFiles/rog11src.dir/save.c.o: ../curses.h
-CMakeFiles/rog11src.dir/save.c.o: ../misc.h
-CMakeFiles/rog11src.dir/save.c.o: ../rogue.h
 CMakeFiles/rog11src.dir/save.c.o: ../save.c
 
 CMakeFiles/rog11src.dir/scrolls.c.o: ../curses.h
+CMakeFiles/rog11src.dir/scrolls.c.o: ../extern.h
+CMakeFiles/rog11src.dir/scrolls.c.o: ../io.h
 CMakeFiles/rog11src.dir/scrolls.c.o: ../misc.h
+CMakeFiles/rog11src.dir/scrolls.c.o: ../random.h
 CMakeFiles/rog11src.dir/scrolls.c.o: ../rogue.h
 CMakeFiles/rog11src.dir/scrolls.c.o: ../scrolls.c
 
@@ -241,11 +248,17 @@ CMakeFiles/rog11src.dir/things.c.o: ../rogue.h
 CMakeFiles/rog11src.dir/things.c.o: ../things.c
 
 CMakeFiles/rog11src.dir/weapons.c.o: ../curses.h
+CMakeFiles/rog11src.dir/weapons.c.o: ../extern.h
+CMakeFiles/rog11src.dir/weapons.c.o: ../io.h
 CMakeFiles/rog11src.dir/weapons.c.o: ../misc.h
 CMakeFiles/rog11src.dir/weapons.c.o: ../rogue.h
+CMakeFiles/rog11src.dir/weapons.c.o: ../thing.h
 CMakeFiles/rog11src.dir/weapons.c.o: ../weapons.c
+CMakeFiles/rog11src.dir/weapons.c.o: ../weapons.h
 
 CMakeFiles/rog11src.dir/wizard.c.o: ../curses.h
+CMakeFiles/rog11src.dir/wizard.c.o: ../extern.h
+CMakeFiles/rog11src.dir/wizard.c.o: ../io.h
 CMakeFiles/rog11src.dir/wizard.c.o: ../misc.h
 CMakeFiles/rog11src.dir/wizard.c.o: ../rogue.h
 CMakeFiles/rog11src.dir/wizard.c.o: ../wizard.c

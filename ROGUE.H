@@ -12,16 +12,8 @@
  *  Options set for PC rogue
  */
 
-/*
- * copy protection
- */
-#define PROTECTED
-#define CSUM	-1632
-#ifdef PROTECTED
-#define P_DAMAGE 6
-#else
 #define P_DAMAGE 1
-#endif
+
 
 /*
  * if DEBUG or WIZARD is changed

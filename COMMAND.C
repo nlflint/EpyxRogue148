@@ -198,7 +198,6 @@ execcom()
 		when '<': after = FALSE; u_level();
 		when '/': after = FALSE; help(helpobjs);
 		when '?': after = FALSE; help(helpcoms);
-		when '!': after = FALSE; fakedos();
 		when 's': search();
 		when 'z':
 			if (get_dir())
@@ -216,8 +215,6 @@ execcom()
 		when CTRL('R'): after = FALSE; msg(huh);
 		when 'v':
 			after = FALSE;
-			if (strcmp(whoami,"The Grand Beeking") == 0)
-				addmsg("(%d)",csum());
 			msg("Rogue version %d.%d (Mr. Mctesq was here)", revno, verno);
 		when 'S': after = FALSE; save_game();
 		when '.': doctor();

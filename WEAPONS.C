@@ -6,6 +6,10 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "thing.h"
+#include "extern.h"
+#include "weapons.h"
+#include "io.h"
 
 #define NONE 100
 
@@ -31,8 +35,7 @@ static struct init_weps {
  * missile:
  *	Fire a missile in a given direction
  */
-missile(ydelta, xdelta)
-int ydelta, xdelta;
+void missile(int ydelta, int xdelta)
 {
     register THING *obj, *nitem;
 
@@ -147,9 +150,7 @@ THING *obj;
  * fall:
  *	Drop an item someplace around here.
  */
-fall(obj, pr)
-THING *obj;
-bool pr;
+void fall(THING *obj, bool pr)
 {
     static coord fpos;
     register int index;
@@ -245,7 +246,7 @@ register char type;
  * wield:
  *	Pull out a certain weapon
  */
-wield()
+void wield(void)
 {
     register THING *obj, *oweapon;
     register char *sp;

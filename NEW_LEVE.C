@@ -7,6 +7,9 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
+#include "random.h"
+#include "dos.h"
 
 #define TREAS_ROOM 20	/* one chance in TREAS_ROOM for a treasure room */
 #define MAXTREAS 10	/* maximum number of treasures in a treasure room */
@@ -30,15 +33,11 @@ void new_level(void)
      */
     if (level > max_level)
 		max_level = level;
-#ifdef PROTECTED
-	one_tick();
-	if (level > 1 && csum() != cksum)
-		_halt();
-#endif
+
     /*
      * Clean things off from last level
      */
-    wsetmem(_level, ((MAXLINES-3)*MAXCOLS) >> 1,'  ');
+    wsetmem(_level, ((MAXLINES-3)*MAXCOLS) >> 1, (char[]) {' ', ' '});
     setmem(_flags, (MAXLINES-3)*MAXCOLS, F_REAL);
     /*
      * Free up the monsters on the last level
@@ -273,4 +272,3 @@ treas_room()
     }
     level--;
 }
-

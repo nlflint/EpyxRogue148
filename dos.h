@@ -11,6 +11,9 @@ void dmaout(char *buffer, int length, int ds, int offset);
 // Saves DS:OFFSET to buffer
 void dmain(char *buffer, int length, int ds, int offset);
 
+void _halt(void);
+void beep(void);
+
 #endif //ROG11SRC_DOS_H
 
 

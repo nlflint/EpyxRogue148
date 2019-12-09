@@ -22,7 +22,6 @@
 #include "load.h"
 #include "init.h"
 #include "env.h"
-#include "protect.h"
 #include "rip.h"
 #include "begin.h"
 #include "new_leve.h"
@@ -33,6 +32,7 @@
 #include "swint.h"
 #include "extern.h"
 #include "random.h"
+#include "daemons.h"
 
 
 #define is_key(s) ((*s=='-')||(*s=='/'))
@@ -68,7 +68,7 @@ void main(int argc, char **argv)
 	init_ds();
 
     setenv(ENVFILE);
-	protect(find_drive());
+
 	/*
 	 * Parse the screen environment variable.  if the string starts with
 	 * "bw", then we force black and white mode.  If it ends with "fast"
@@ -80,11 +80,8 @@ void main(int argc, char **argv)
 		 && strncmp(&s_screen[sl - 4], "fast", 4) == 0)
 		 	do_force = TRUE;
 	dnum = 0;
-#ifdef PROTECTED
-    while (--argc && goodchk == 0xD0D) {
-#else
-    while (--argc) {
-#endif
+
+	while (--argc) {
 		curarg = *(++argv);
     	if (*curarg == '-' || *curarg == '/')
     	{

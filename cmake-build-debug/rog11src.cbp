@@ -117,6 +117,12 @@
 		<Unit filename="/Users/nathanflint/git/rog11src/daemons.c">
 			<Option target="rog11src"/>
 		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/daemons.h">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/dos.c">
+			<Option target="rog11src"/>
+		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/dos.h">
 			<Option target="rog11src"/>
 		</Unit>
@@ -130,9 +136,6 @@
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/extern.h">
-			<Option target="rog11src"/>
-		</Unit>
-		<Unit filename="/Users/nathanflint/git/rog11src/fakedos.c">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/fight.c">
@@ -195,6 +198,9 @@
 		<Unit filename="/Users/nathanflint/git/rog11src/move.c">
 			<Option target="rog11src"/>
 		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/move.h">
+			<Option target="rog11src"/>
+		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/new_leve.c">
 			<Option target="rog11src"/>
 		</Unit>
@@ -214,12 +220,6 @@
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/potions.c">
-			<Option target="rog11src"/>
-		</Unit>
-		<Unit filename="/Users/nathanflint/git/rog11src/protect.c">
-			<Option target="rog11src"/>
-		</Unit>
-		<Unit filename="/Users/nathanflint/git/rog11src/protect.h">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/random.c">
@@ -244,6 +244,9 @@
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/save.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/save.h">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/scrolls.c">
@@ -277,6 +280,9 @@
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/weapons.c">
+			<Option target="rog11src"/>
+		</Unit>
+		<Unit filename="/Users/nathanflint/git/rog11src/weapons.h">
 			<Option target="rog11src"/>
 		</Unit>
 		<Unit filename="/Users/nathanflint/git/rog11src/wizard.c">

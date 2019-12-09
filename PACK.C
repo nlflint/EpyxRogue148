@@ -1,6 +1,7 @@
 #include "rogue.h"
 #include "curses.h"
 #include "pack.h"
+#include "extern.h"
 
 /*
  * Routines to deal with the pack
@@ -28,9 +29,7 @@ byte ch, *chp;
  *	non-null use it as the linked_list pointer instead of gettting
  *	it off the ground.
  */
-add_pack(obj, silent)
-register THING *obj;
-bool silent;
+void add_pack(THING *obj, bool silent)
 {
     register THING *op, *lp;
     register bool exact, from_floor;
@@ -253,8 +252,7 @@ char *lstr;
  * pick_up:
  *	Add something to characters pack.
  */
-pick_up(ch)
-byte ch;
+void pick_up(byte ch)
 {
     register THING *obj;
 

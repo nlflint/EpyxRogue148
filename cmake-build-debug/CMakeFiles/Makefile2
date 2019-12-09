@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/rog11src.dir/all:
 	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/depend
 	$(MAKE) -f CMakeFiles/rog11src.dir/build.make CMakeFiles/rog11src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target rog11src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39 "Built target rog11src"
 .PHONY : CMakeFiles/rog11src.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rog11src.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles 39
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rog11src.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathanflint/git/rog11src/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/rog11src.dir/rule

@@ -8,6 +8,7 @@
 #include	"curses.h"
 #include	"extern.h"
 #include    "io.h"
+#include    "swint.h"
 
 extern char *stccpy(), *stpchr();
 extern int scr_type;
@@ -840,5 +841,3 @@ char *noterse(char *str)
 {
 	return( terse || expert ? nullstr : str);
 }
-
-

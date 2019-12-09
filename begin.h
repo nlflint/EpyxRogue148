@@ -6,5 +6,6 @@
 #define ROG11SRC_BEGIN_H
 
 void exit(int exitCode);
+int _dsval = 0;
 
 #endif //ROG11SRC_BEGIN_H

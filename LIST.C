@@ -8,6 +8,7 @@
 
 #include "rogue.h"
 #include "curses.h"
+#include "extern.h"
 
 extern THING *_things;
 extern int   *_t_alloc;

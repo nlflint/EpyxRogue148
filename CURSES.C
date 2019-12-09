@@ -5,6 +5,7 @@
 #include	"curses.h"
 #include	"swint.h"
 #include	"extern.h"
+#include    "begin.h"
 
 #include <stdio.h>
 
@@ -339,7 +340,6 @@ set_cursor()
 void winit(void)
 {
 	register int i, cnt;
-	extern int _dsval;
 
 	/*
 	 * Get monitor type

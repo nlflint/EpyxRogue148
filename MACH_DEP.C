@@ -11,10 +11,9 @@
 #include    "extern.h"
 #include    "mach_dep.h"
 #include    "swint.h"
+#include    "begin.h"
 
 #define ULINE() if(is_color) lmagenta();else uline();
-#define TICK_ADDR 0x70
-static int clk_vec[2];
 static int ocb;
 
 
@@ -31,29 +30,17 @@ void setup(void)
 		terse = TRUE;
 	}
 	expert = terse;
-	/*
-	 * Vector CTRL-BREAK to call quit()
-	 */
-	COFF();
 	ocb = set_ctrlb(0);
 }
 
 void clock_on(void)
 {
-	extern int _csval, clock(), (*cls_)();
-	int new_vec[2];
 
-	new_vec[0] = clock;
-	new_vec[1] = _csval;
-	dmain(clk_vec, 2, 0, TICK_ADDR); 
-	dmaout(new_vec, 2, 0, TICK_ADDR);
-	cls_ = no_clock;
 }
 
 void no_clock(void)
 {
-	dmaout(clk_vec, 2, 0, TICK_ADDR);
-	return;
+
 }
 
 /*
@@ -255,8 +242,6 @@ isjr()
 
 int swint(int interruptNumber, struct sw_regs *rp)
 {
-	extern int _dsval;
-
 	rp->ds = rp->es = _dsval;
 	sysint(interruptNumber, rp, rp);
 	return rp->ax;

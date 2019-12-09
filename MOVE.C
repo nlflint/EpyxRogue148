@@ -9,6 +9,7 @@
 #include "extern.h"
 #include "io.h"
 #include "misc.h"
+#include "move.h"
 
 /*
  * Used to hold the new hero position
@@ -302,9 +303,7 @@ descend(mesg)
  * rndmove:
  *	Move in a random direction if the monster/person is confused
  */
-rndmove(who,newmv)
-THING *who;
-coord *newmv;
+void rndmove(THING *who, coord *newmv)
 {
     register int x, y;
     register byte ch;
@@ -340,4 +339,3 @@ bad:
     bcopy((*newmv),who->t_pos);
     return ;
 }
-

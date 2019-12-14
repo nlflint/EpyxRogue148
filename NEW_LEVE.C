@@ -30,11 +30,7 @@ new_level()
      */
     if (level > max_level)
 		max_level = level;
-#ifdef PROTECTED
-	one_tick();
-	if (level > 1 && csum() != cksum)
-		_halt();
-#endif
+
     /*
      * Clean things off from last level
      */

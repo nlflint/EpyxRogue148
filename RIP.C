@@ -255,7 +255,7 @@ register char monst;
 
     if (scr_type == 7)
         uline();
-    center(14, your_na);
+    center(14, whoami);
     standend();
 
     killer = killname(monst, TRUE);
@@ -263,7 +263,7 @@ register char monst;
     strcpy(buf,"killed by");
 
     center(15,buf);
-    center(16, kild_by);
+    center(16, prbuf);
 
     sprintf(buf, "%u Au", purse);
     center(18, buf);

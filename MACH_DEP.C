@@ -279,17 +279,3 @@ unsetup()
 {
 	set_ctrlb(ocb);
 }
-
-one_tick()
-{
-	extern int tick;
-	int otick = tick;
-	int i=0,j=0;
-
-	while(i++)
-		while (j++)
-			if (otick != tick)
-				return;
-			else if (i > 2)
-				_halt();
-}

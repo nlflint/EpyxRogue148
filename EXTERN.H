@@ -71,9 +71,6 @@ extern int	a_chances[], a_class[], count, dnum, food_left,
 
 extern long	seed, *e_levels;
 
-extern int hit_mul;
-extern char *your_na, *kild_by;
-extern int goodchk;
 extern char *_whoami;
 extern int cksum;
 

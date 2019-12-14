@@ -6,13 +6,8 @@
 dataseg	segment para public 'data'
 	public	tick_
 tick_	dw	0
-extrn	hit_mul_:word
-extrn	goodchk_:word
-extrn	your_na_:word
-extrn	kild_by_:word
 extrn	whoami_:word
 extrn	prbuf_:word
-extrn	no_step_:word
 extrn	_Corg_:word
 extrn	_Cend_:word
 dataseg	ends
@@ -20,7 +15,7 @@ dataseg	ends
 codeseg	SEGMENT	para PUBLIC 'code'
 	PUBLIC dmain_,dmaout_,COFF_,beep_,out_,peekb_,pokeb_
 	PUBLIC getch_, no_char_,wsetmem_,clock_
-	PUBLIC getds_, _halt_, csum_
+	PUBLIC getds_
 	EXTRN	quit_:NEAR
 	ASSUME	CS:codeseg, DS:dataseg
 	
@@ -164,43 +159,12 @@ clock_	proc	near
 	cli
 	push	ds
 	push	ax
-	; kill single steppers
-	mov	ax,0
-	mov	ds,ax
-	mov	ax,[4]
-	cmp	ax,0
-	jz	ok1
-	call	_halt_
-ok1:
-	mov	ax,[6]
-	cmp	ax,0
-	jz	ok2
-	call	_halt_
-ok2:
+
 	; use our data segment
 	mov	ax,dataseg
 	mov	ds,ax
 	inc	tick_		; Tick the old clock
 
-	; some more rough stuff for people in debuggers
-	cmp	no_step_, 0
-	je	no_big
-	inc	no_step_
-	cmp	no_step_,20
-	jle	no_big
-	call	_halt_
-no_big:
-	; copy protection goodies
-	cmp	hit_mul_, 1
-	je	pskip
-	cmp	goodchk_, 0D0DH
-	jne	pskip
-	mov	ax, prbuf_
-	mov	kild_by_, ax
-	mov	ax, offset whoami_
-	mov	your_na_, ax
-	mov	hit_mul_, 1
-pskip:
 	pop	ax
 	pop	ds
 	iret			; return from interrupt
@@ -275,44 +239,6 @@ getds_	proc	near
 	pop	ax
 	ret
 getds_	endp
-
-_halt_	proc near
-	std
-	cli
-	mov	ax, ss
-	mov	ds, ax
-	mov	di, sp	
-	mov	ax, 0
-	mov	cx, 10
-hcont:
-	stosw
-	dec	cx
-	jnz	hcont
-
-	hlt
-_halt_	endp
-
-csum_	proc	near
-	mov	ax, offset _Corg_
-	mov	bx, offset _Cend_
-	mov	cx, 0
-	push	si
-	push	ds
-	push	cs
-	pop	ds
-	add	ax, 200H
-	mov	si, ax
-	cld
-csmore:
-	lodsw
-	add	cx, ax
-	cmp	bx, si
-	jl	csmore
-	mov	ax, cx
-	pop	ds
-	pop	si
-	ret
-csum_	endp
 
 codeseg	ends
 	end

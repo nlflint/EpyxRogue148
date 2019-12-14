@@ -399,7 +399,7 @@ bool hurl;
 			 * copy protection goodies
 			 */
 			if (thdef == &player)
-				damage *= hit_mul;
+				damage *= 1;
 	    def->s_hpt -= max(0, damage);
 	    did_hit = TRUE;
 	}

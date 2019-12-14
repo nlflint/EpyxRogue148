@@ -65,7 +65,6 @@ setenv(envfile)
 {
 	register char pc;
 
-	one_tick();	/* if he tries to disable the clock */
     if ((fd = open(envfile,0)) < 0)
 	{
         return(ERROR);
